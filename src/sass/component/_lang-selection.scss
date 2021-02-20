@@ -1,0 +1,11 @@
+
+.langSelection {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 15px 10px 0 0;
+
+  select, img {
+    margin-right: 10px;
+  }
+}

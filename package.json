@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "0.1.0",
+  "version": "0.1.0-dev",
   "private": true,
   "homepage": "http://davlac.github.io/cv",
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "i18next": "^19.8.9",
     "i18next-browser-languagedetector": "^6.0.1",
+    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.7",

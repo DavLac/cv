@@ -3,8 +3,8 @@ import {initReactI18next} from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import {TRANSLATIONS_FR} from "./fr-FR/profileData.js";
-import {TRANSLATIONS_EN} from "./en-EN/profileData.js";
-import {COMMONS_EN} from "./en-EN/common.js";
+import {TRANSLATIONS_EN} from "./en-GB/profileData.js";
+import {COMMONS_EN} from "./en-GB/common.js";
 import {COMMONS_FR} from "./fr-FR/common.js";
 
 const resources = {
