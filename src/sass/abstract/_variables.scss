@@ -1,6 +1,13 @@
 
-$primary-color: #212121;
-$secondary-color: lighten($primary-color, 10%);
-$tertiary-color: lighten($secondary-color, 10%);
+$primary-color: #cccccc;
+$primary-color-darker-1: lighten($primary-color, 10%);
+$primary-color-darker-2: lighten($primary-color-darker-1, 10%);
+$primary-color-darker-3: lighten($primary-color-darker-2, 10%);
+
+$secondary-color-lighten: #00e64d;
+$secondary-color: #00b33c;
+$secondary-color-darker: #004d1a;
+
 $primary-text-color: white;
 $secondary-text-color: darken($primary-text-color, 20%);
+$third-text-color: darken($secondary-text-color, 20%);

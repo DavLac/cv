@@ -31,10 +31,18 @@ export const Header = () => {
         <header>
             <div className="langSelection">
                 {renderLangFlag()}
-                <select name="language" id="en" onChange={handleSelectOnChange}>
-                    <option value="en">English</option>
-                    <option value="fr">Francais</option>
-                </select>
+
+                <div className="control has-icons-left">
+                    <div className="select is-small">
+                        <select name="language" id="en" onChange={handleSelectOnChange} style={{color: 'black'}}>
+                            <option value="en">English</option>
+                            <option value="fr">Francais</option>
+                        </select>
+                    </div>
+                    <span className="icon is-small is-left">
+                        <i className="fa fa-globe" style={{color: 'black'}}></i>
+                    </span>
+                </div>
             </div>
 
             <h1>{t('common:welcome')} <br/> DLacoste CV website</h1>

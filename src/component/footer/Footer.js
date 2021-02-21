@@ -4,8 +4,12 @@ import packageJson from '../../../package.json';
 
 export const Footer = () => {
     return (
-        <footer>
-            © Copyright David Lacoste 2021 - v{packageJson.version}
+        <footer className="footer">
+            <div className="content has-text-centered">
+                <p>
+                    © Copyright <strong>David Lacoste</strong> 2021 - v{packageJson.version}
+                </p>
+            </div>
         </footer>
     );
 };

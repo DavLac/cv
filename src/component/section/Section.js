@@ -7,7 +7,7 @@ export const Section = () => {
     const {t} = useTranslation();
 
     return (
-        <section>
+        <section className="section">
             <CodeBlock
                 title={t('common:rawProfileTitle')}
                 language="Json"

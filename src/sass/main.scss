@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 @import "abstract/variables";
 
@@ -10,3 +11,5 @@
 @import "layout/header";
 @import "layout/section";
 @import "layout/footer";
+
+@import "../../node_modules/bulma/bulma.sass";

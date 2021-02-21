@@ -1,9 +1,14 @@
 
-.codeBlockContent {
-  background-color: $tertiary-color;
-  padding: 25px;
-  border: 1px solid $secondary-text-color;
-  border-radius: 10px;
+$pre-background: $primary-color-darker-3;
+$box-background-color: $primary-color-darker-3;
+
+.code-block {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+
+  legend{
+    font-weight: bold;
+  }
 
   pre {
     white-space: pre-wrap; /* css-3 */
