@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
     title: string;
@@ -7,12 +7,12 @@ interface Props {
 }
 
 export const CodeBlock = (props: Props) => {
-    return (
-        <fieldset className="box code-block">
-            <legend>{props.title} ({props.language})</legend>
-            <pre>
-                {JSON.stringify(props.content, null, 2)}
-            </pre>
-        </fieldset>
-    );
+  return (
+    <fieldset className="box code-block">
+      <legend>{props.title} ({props.language})</legend>
+      <pre>
+        {JSON.stringify(props.content, null, 2)}
+      </pre>
+    </fieldset>
+  );
 };
