@@ -7,6 +7,6 @@ This is a static CV website using React
 
 This app is deployed here : [https://davlac.github.io/cv/](https://davlac.github.io/cv/)
 
-Script to deploy the app : `` npm run deploy``
+Script to deploy the app : ` npm run deploy`
 
 For more information on the deployment process : [Deploy on GitHub pages](https://github.com/gitname/react-gh-pages)
