@@ -2,10 +2,10 @@ import i18n from "i18next";
 import {initReactI18next} from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import {TRANSLATIONS_FR} from "./fr-FR/profileData.js";
-import {TRANSLATIONS_EN} from "./en-GB/profileData.js";
-import {COMMONS_EN} from "./en-GB/common.js";
-import {COMMONS_FR} from "./fr-FR/common.js";
+import {TRANSLATIONS_FR} from "./fr-FR/profileData";
+import {TRANSLATIONS_EN} from "./en-GB/profileData";
+import {COMMONS_EN} from "./en-GB/common";
+import {COMMONS_FR} from "./fr-FR/common";
 
 const resources = {
     en: {
@@ -29,4 +29,4 @@ i18n
         resources: resources
     });
 
-export const i18nFunction = (lang) => i18n.changeLanguage(lang);
+export const i18nFunction = (lang: string) => i18n.changeLanguage(lang);

@@ -18,9 +18,9 @@ const renderLangFlag = () => {
     }
 }
 
-const handleSelectOnChange = (e) => {
-    e.preventDefault();
-    i18nFunction(e.target.value);
+const handleSelectOnChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    event.preventDefault();
+    i18nFunction(event.target.value);
 }
 
 export const Header = () => {
@@ -33,13 +33,13 @@ export const Header = () => {
                 {renderLangFlag()}
 
                 <div className="control has-icons-left">
-                    <div className="select">
+                    <div className="select is-small">
                         <select name="language" id="en" onChange={handleSelectOnChange} style={{color: 'black'}}>
                             <option value="en">English</option>
                             <option value="fr">Francais</option>
                         </select>
                     </div>
-                    <span className="icon is-left">
+                    <span className="icon is-left is-small">
                         <i className="fa fa-globe" style={{color: 'black'}}></i>
                     </span>
                 </div>
