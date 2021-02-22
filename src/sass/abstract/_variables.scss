@@ -11,3 +11,6 @@ $secondary-color-darker: #004d1a;
 $primary-text-color: white;
 $secondary-text-color: darken($primary-text-color, 20%);
 $third-text-color: darken($secondary-text-color, 20%);
+
+$font-size-1: calc(3px + 3vmin);
+$font-size-2: calc(3px + 5vmin);

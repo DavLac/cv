@@ -2,7 +2,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  font-size: calc(3px + 2vmin);
+  font-size: $font-size-1;
   color: $primary-text-color;
   max-width: 98vw;
   margin: 0 15px 0 15px;
