@@ -33,13 +33,13 @@ export const Header = () => {
                 {renderLangFlag()}
 
                 <div className="control has-icons-left">
-                    <div className="select is-small">
+                    <div className="select">
                         <select name="language" id="en" onChange={handleSelectOnChange} style={{color: 'black'}}>
                             <option value="en">English</option>
                             <option value="fr">Francais</option>
                         </select>
                     </div>
-                    <span className="icon is-small is-left">
+                    <span className="icon is-left">
                         <i className="fa fa-globe" style={{color: 'black'}}></i>
                     </span>
                 </div>

@@ -1,3 +1,4 @@
+$title-color: $primary-text-color;
 
 header {
   background: linear-gradient(
@@ -5,11 +6,32 @@ header {
                   $secondary-color-darker,
                   $secondary-color-lighten
   );
-  height: 25vh;
+  height: 30vh;
   min-height: 175px;
 
   h1 {
-    text-align: center;
+    font-weight: 600;
     font-size: $font-size-2;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 25vh;
+    min-height: 150px;
+    h1{
+      font-size: min(30px);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 25vh;
+    min-height: 150px;
+    h1{
+      font-size: min(25px);
+    }
   }
 }
