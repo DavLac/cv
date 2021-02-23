@@ -1,0 +1,30 @@
+
+.container-experience{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.experience-timelinedot {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.timeline-opposite-content{
+  min-width: 100px;
+}
+
+.experience-student-title{
+  font-size: x-large;
+  font-weight: 400;
+  color: $third-color-3;
+}
+
+.experience-student-accordion{
+  margin: 0 16px 0 16px;
+}
+
+@media screen and (max-width: 400px) {
+  .timeline-opposite-content{
+    min-width: 50px;
+  }
+}

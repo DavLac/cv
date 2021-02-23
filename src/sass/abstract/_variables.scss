@@ -1,16 +1,14 @@
-$primary-color: #cccccc;
-$primary-color-darker-1: lighten($primary-color, 10%);
-$primary-color-darker-2: lighten($primary-color-darker-1, 10%);
-$primary-color-darker-3: lighten($primary-color-darker-2, 10%);
+$primary-color: white;
+$primary-color-2: darken($primary-color, 5%);
+$primary-color-3: darken($primary-color-2, 5%);
 
-$secondary-color: #009933;
-$secondary-color-lighten: lighten($secondary-color, 13%);
-$secondary-color-darker: darken($secondary-color, 15%);
+$secondary-color: #00882D;
+$secondary-color-light: lighten($secondary-color, 10%);
+$secondary-color-pale: #f7fff9;
 
-$primary-text-color: white;
-$secondary-text-color: darken($primary-text-color, 20%);
-$third-text-color: darken($secondary-text-color, 20%);
+$third-color: #A6A6A6;
+$third-color-2: darken($third-color, 5%);
+$third-color-3: darken($third-color-2, 5%);
+$third-dark: #343434;
 
-$font-size-0: calc(3px + 2.5vmin);
-$font-size-1: calc(3px + 3vmin);
-$font-size-2: calc(3px + 5vmin);
+$xxxx-large: 4rem;

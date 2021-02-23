@@ -1,3 +1,11 @@
-$footer-background-color: $primary-color-darker-1;
-$footer-color: $third-text-color;
-$text-strong: $secondary-color;
+
+.footer-container {
+  font-size: large;
+  color: $third-color;
+  text-align: center;
+  padding: 3rem 1.5rem 4rem;
+
+  strong {
+    color: $secondary-color;
+  }
+}

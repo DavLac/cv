@@ -1,11 +1,13 @@
-$pre-background: $primary-color-darker-3;
-$box-background-color: $primary-color-darker-3;
+$box-background-color: $primary-color;
+$pre-background: $box-background-color;
+
 
 .code-block {
-  border: 1px solid $primary-color;
+  border: 1px solid $primary-color-3;
   color: $primary-color;
 
   legend {
+    font-size: large;
     font-weight: bold;
   }
 
@@ -16,6 +18,7 @@ $box-background-color: $primary-color-darker-3;
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 
     font-family: "Courier New", serif;
-    font-size: $font-size-0;
+    font-size: small;
+    height: 300px;
   }
 }

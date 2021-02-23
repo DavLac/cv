@@ -1,3 +1,16 @@
-section {
-  background-color: $primary-color-darker-1;
+
+.container-custom {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container-darken {
+  background-color: $primary-color-2;
+}
+
+.container-title{
+  font-size: xxx-large;
+  font-weight: 600;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }

@@ -12,7 +12,9 @@ export const CodeBlock = (props: Props) => {
       <legend>
         {props.title} ({props.language})
       </legend>
-      <pre>{JSON.stringify(props.content, null, 2)}</pre>
+      <pre>
+        {JSON.stringify(props.content, null, 2)}
+      </pre>
     </fieldset>
   );
 };

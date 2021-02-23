@@ -1,8 +1,15 @@
 .App {
   display: flex;
   flex-direction: column;
-  font-size: $font-size-1;
-  color: $primary-text-color;
-  max-width: 98vw;
-  margin: 0 15px 0 15px;
+  font-size: medium;
+}
+
+$link: $secondary-color;
+$link-visited: $link;
+$link-active: $secondary-color-light;
+$link-hover: $link-active;
+
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  font-weight: 600;
 }

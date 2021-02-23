@@ -1,57 +1,36 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../translations/i18n";
-import { i18nFunction } from "../translations/i18n";
-import i18n from "i18next";
-
-import enFlag from "../translations/en-GB/en-flag.png";
-import frFlag from "../translations/fr-FR/fr-flag.png";
-
-const renderLangFlag = () => {
-  switch (i18n.language) {
-    case "en":
-      return <img src={enFlag} alt="en flag" />;
-    case "fr":
-      return <img src={frFlag} alt="fr flag" />;
-    default:
-      return <img src={enFlag} alt="en flag" />;
-  }
-};
-
-const handleSelectOnChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-  event.preventDefault();
-  i18nFunction(event.target.value);
-};
+import { Container, Typography } from "@material-ui/core";
+import { SelectLanguage } from "./SelectLanguage";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <header>
-      <div className="langSelection">
-        {renderLangFlag()}
+    <Container maxWidth={false}
+               className="header-container">
 
-        <div className="control has-icons-left">
-          <div className="select is-small">
-            <select
-              name="language"
-              id="en"
-              onChange={handleSelectOnChange}
-              style={{ color: "black" }}
-            >
-              <option value="en">English</option>
-              <option value="fr">Francais</option>
-            </select>
-          </div>
-          <span className="icon is-left is-small">
-            <i className="fa fa-globe" style={{ color: "black" }}></i>
-          </span>
+      <SelectLanguage />
+
+      <Typography>
+        <h2>{t("common:welcome")}</h2>
+        <h1>David LACOSTE</h1>
+        <h3>Fullstack developer</h3>
+        <div>
+          <GitHubIcon className={"header-icons"} />
+          <LinkedInIcon className={"header-icons"} />
+          <FacebookIcon className={"header-icons"} />
+          <TwitterIcon className={"header-icons"} />
+          <YouTubeIcon className={"header-icons"} />
         </div>
-      </div>
+      </Typography>
 
-      <h1>
-        {t("common:welcome")} <br /> DLacoste CV website
-      </h1>
-    </header>
+    </Container>
   );
 };

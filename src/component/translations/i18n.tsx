@@ -2,10 +2,11 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import { TRANSLATIONS_FR } from "./fr-FR/profileData";
-import { TRANSLATIONS_EN } from "./en-GB/profileData";
+import { TRANSLATIONS_FR } from "./fr-FR/profile-data/profile";
+import { TRANSLATIONS_EN } from "./en-GB/profile-data/profile";
 import { COMMONS_EN } from "./en-GB/common";
 import { COMMONS_FR } from "./fr-FR/common";
+import { Language } from "./Language";
 
 const resources = {
   en: {
@@ -23,7 +24,7 @@ i18n
   .use(initReactI18next)
   .init({
     interpolation: { escapeValue: false },
-    lng: "en",
+    lng: Language.EN,
     ns: ["profileData", "common"],
     defaultNS: "common",
     resources: resources,

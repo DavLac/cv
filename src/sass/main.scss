@@ -7,9 +7,11 @@
 @import "component/app";
 @import "component/code-block";
 @import "component/lang-selection";
+@import "component/experience-details";
 
 @import "layout/header";
 @import "layout/section";
+@import "layout/experience";
 @import "layout/footer";
 
 @import "../../node_modules/bulma/bulma.sass";

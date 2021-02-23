@@ -1,0 +1,45 @@
+
+.experience-detail {
+
+  h1 {
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: large;
+    font-weight: 400;
+    color: $third-color-3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience-detail {
+
+    h1 {
+      font-size: large;
+    }
+
+    h2 {
+      font-size: medium;
+    }
+
+    h3 {
+      font-size: medium;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .experience-detail {
+
+    h1 {
+      font-size: medium;
+    }
+  }
+}
