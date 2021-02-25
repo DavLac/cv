@@ -9,7 +9,7 @@ export const TRANSLATIONS_FR = {
     currentRole: "Fullstack/Backend React/Java développeur",
     currentLocation: {
       city: "Paris",
-      country: "FRANCE"
+      country: "FRANCE",
     },
     generalInformations:
       "Développeur backend Java avec 4 ans d'expérience" +
@@ -24,6 +24,6 @@ export const TRANSLATIONS_FR = {
       "les objectifs commerciaux" +
       "avec qualité et efficacité.",
     roles: ROLES_FR,
-    other: OTHER_FR
-  }
+    other: OTHER_FR,
+  },
 };

@@ -8,44 +8,43 @@ interface Props {
 }
 
 export const ExperienceDates = (props: Props) => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
-    return (
-      <Typography variant="body2" color="textSecondary">
-        {dateToString(props.endContractDate)}
-        <br />
-        {t("common:dateWordDelimiter")}
-        <br />
-        {dateToString(props.startContractDate)}
-        <br />
-        <strong style={{ fontSize: "medium" }}>
-          {displayDuration(
-            stringToDate(props.startContractDate),
-            stringToDate(props.endContractDate)
-          )}
-        </strong>
-      </Typography>
-    );
-  }
-;
+  return (
+    <Typography variant="body2" color="textSecondary">
+      {dateToString(props.endContractDate)}
+      <br />
+      {t("common:dateWordDelimiter")}
+      <br />
+      {dateToString(props.startContractDate)}
+      <br />
+      <strong style={{ fontSize: "medium" }}>
+        {displayDuration(
+          stringToDate(props.startContractDate),
+          stringToDate(props.endContractDate)
+        )}
+      </strong>
+    </Typography>
+  );
+};
 
 const dateToString = (date: string): string => {
   const { t } = useTranslation();
 
   if (date != undefined) {
     const formatedDate: Date = new Date(date);
-    return formatedDate.getFullYear() + " " +
-      formatedDate.toLocaleString("default", { month: "short" });
+    return (
+      formatedDate.getFullYear() +
+      " " +
+      formatedDate.toLocaleString("default", { month: "short" })
+    );
   } else {
     return t("common:today");
   }
 };
 
-
 const stringToDate = (date: string): Date => {
-  return (date != undefined)
-    ? new Date(date)
-    : new Date();
+  return date != undefined ? new Date(date) : new Date();
 };
 
 const yearsDiff = (d1: Date, d2: Date): number => {
@@ -59,11 +58,15 @@ const monthsDiff = (d1: Date, d2: Date): number => {
 };
 
 const displayDuration = (d1: Date, d2: Date): string => {
+  const { t } = useTranslation();
+
   const yearDuration = yearsDiff(d1, d2);
   const monthDurationLastYear = monthsDiff(d1, d2) % 12;
-  return ((yearDuration > 0) ? yearDuration + "y" : "")
-    +
-    ((yearDuration > 0 && monthDurationLastYear > 0) ? ", " : "")
-    +
-    ((monthDurationLastYear > 0) ? monthDurationLastYear + "m" : "");
+  return (
+    (yearDuration > 0 ? yearDuration + t("common:yearShort") : "") +
+    (yearDuration > 0 && monthDurationLastYear > 0 ? ", " : "") +
+    (monthDurationLastYear > 0
+      ? monthDurationLastYear + t("common:monthShort")
+      : "")
+  );
 };

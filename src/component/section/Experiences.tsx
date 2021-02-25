@@ -8,7 +8,12 @@ import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import { useTranslation } from "react-i18next";
-import { Accordion, AccordionDetails, AccordionSummary, Container } from "@material-ui/core";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Container,
+} from "@material-ui/core";
 import { ExperienceDetails } from "../element/ExperienceDetails";
 import { ExperienceDates } from "../element/ExperienceDates";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -20,11 +25,11 @@ export const Experiences = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <Container maxWidth={false}
-               disableGutters={true}
-               className="container-custom container-experience">
-      <h1 className="container-title">{t("common:workExperienceTitle")}</h1>
-      <Timeline style={{ padding: "inherit" }}>
+    <Container maxWidth={false} className="container-custom">
+      <h1 className="container-title experience-title">
+        {t("common:workExperienceTitle")}
+      </h1>
+      <Timeline className="timeline-experience">
         {displayRoles(profileData.roles.worker)}
       </Timeline>
 
@@ -36,18 +41,17 @@ export const Experiences = () => {
         >
           <Typography>
             <h1 className="experience-student-title">
-              Student experiences (Apprentice, Trainee)
+              {t("common:studentExperienceTitle")}
             </h1>
           </Typography>
         </AccordionSummary>
 
         <AccordionDetails>
-          <Timeline style={{ padding: "inherit" }}>
+          <Timeline className="timeline-experience">
             {displayRoles(profileData.roles.student)}
           </Timeline>
         </AccordionDetails>
       </Accordion>
-
     </Container>
   );
 };
@@ -55,55 +59,37 @@ export const Experiences = () => {
 const displayRoles = (roles: any) => {
   const timelineItems: any[] = [];
 
-  roles.map(
-    (role: any) =>
-      timelineItems.push(timelineItem(
-        role.contract.startDate,
-        role.contract.endDate,
-        role
-      ))
+  roles.map((role: any) =>
+    timelineItems.push(
+      timelineItem(role.contract.startDate, role.contract.endDate, role)
+    )
   );
 
-  return (
-    <div>
-      {timelineItems}
-    </div>
-  );
+  return <div>{timelineItems}</div>;
 };
 
-const timelineItem = (
-  startDate: string,
-  endDate: string,
-  roleDetails: any
-) => {
+const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
   return (
     <TimelineItem>
       <TimelineOppositeContent
         style={{
           flex: "0",
-          padding: "6px 16px 0 3px"
+          padding: "6px 16px 0 3px",
         }}
-        className={"timeline-opposite-content"}>
-
+        className={"timeline-opposite-content"}
+      >
         <ExperienceDates
           startContractDate={startDate}
           endContractDate={endDate}
         />
-
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineDot className="experience-timelinedot" color={"inherit"} />
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent>
-
         <ExperienceDetails roleDetails={roleDetails} />
-
       </TimelineContent>
     </TimelineItem>
   );
 };
-
-
-
-

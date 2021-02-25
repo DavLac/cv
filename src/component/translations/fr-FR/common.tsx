@@ -3,7 +3,10 @@ export const COMMONS_FR = {
   workExperienceTitle: "Expériences Professionelles",
   dateWordDelimiter: "à",
   today: "Présent",
+  monthShort: "m",
+  yearShort: "a",
   technicalStackTitle: "Environnement technique",
   trainingTitle: "Formation",
-  rawProfileTitle: "Données brutes du profil"
+  studentExperienceTitle: "Expériences étudiantes (Apprentissage, Stages)",
+  rawProfileTitle: "Données brutes du profil",
 };

@@ -1,30 +1,41 @@
-
-.container-experience{
-  margin-left: 0;
-  padding-left: 0;
-}
-
 .experience-timelinedot {
   background-color: $secondary-color;
   border-color: $secondary-color;
 }
 
-.timeline-opposite-content{
+.timeline-opposite-content {
   min-width: 100px;
 }
 
-.experience-student-title{
+.experience-student-title {
   font-size: x-large;
   font-weight: 400;
   color: $third-color-3;
 }
 
-.experience-student-accordion{
-  margin: 0 16px 0 16px;
+.timeline-experience {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.experience-student-accordion {
+  margin: 3rem 16px 3rem 16px;
 }
 
 @media screen and (max-width: 400px) {
-  .timeline-opposite-content{
+  .timeline-opposite-content {
     min-width: 50px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .experience-title {
+    text-align: center;
+  }
+
+  .timeline-experience,
+  .experience-student-accordion {
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
 }

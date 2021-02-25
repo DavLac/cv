@@ -26,7 +26,7 @@ export const SelectLanguage = () => {
           </select>
         </div>
         <span className="icon is-left">
-            <TranslateIcon className={"translateIcon"} />
+          <TranslateIcon className={"translateIcon"} />
         </span>
       </div>
     </div>

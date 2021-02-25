@@ -1,12 +1,11 @@
-
 .experience-detail {
-
   h1 {
     font-size: x-large;
     font-weight: 600;
   }
 
   h2 {
+    margin-top: 15px;
     font-size: large;
     font-weight: 600;
   }
@@ -18,9 +17,18 @@
   }
 }
 
+.experience-chip {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.experience-training--ul {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
 @media screen and (max-width: 600px) {
   .experience-detail {
-
     h1 {
       font-size: large;
     }
@@ -37,7 +45,6 @@
 
 @media screen and (max-width: 400px) {
   .experience-detail {
-
     h1 {
       font-size: medium;
     }

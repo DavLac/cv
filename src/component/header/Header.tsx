@@ -13,9 +13,7 @@ export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth={false}
-               className="header-container">
-
+    <Container maxWidth={false} className="header-container">
       <SelectLanguage />
 
       <Typography>
@@ -30,7 +28,6 @@ export const Header = () => {
           <YouTubeIcon className={"header-icons"} />
         </div>
       </Typography>
-
     </Container>
   );
 };

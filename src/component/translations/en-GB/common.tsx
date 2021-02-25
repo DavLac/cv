@@ -3,7 +3,10 @@ export const COMMONS_EN = {
   workExperienceTitle: "Working Experiences",
   dateWordDelimiter: "to",
   today: "Today",
+  monthShort: "m",
+  yearShort: "y",
   technicalStackTitle: "Technical stack",
   trainingTitle: "Training",
+  studentExperienceTitle: "Student experiences (Apprentice, Trainee)",
   rawProfileTitle: "Raw profile data",
 };

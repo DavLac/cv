@@ -1,10 +1,10 @@
-
 .header-container {
   background: linear-gradient(
-                  to right bottom,
-                  $secondary-color-pale 35%,
-                  $primary-color-3 50%,
-                  $third-dark);
+    to right bottom,
+    $secondary-color-pale 35%,
+    $primary-color-3 60%,
+    $third-color-3
+  );
 
   height: 100vh;
   min-height: 175px;
@@ -13,7 +13,7 @@
     color: $third-color-3;
     font-weight: 500;
     font-size: xxx-large;
-    margin-top: 3rem;
+    margin-top: 35vh;
   }
 
   h1 {
