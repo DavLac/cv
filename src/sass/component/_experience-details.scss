@@ -27,8 +27,14 @@
   margin-left: 15px;
 }
 
+.experience-group-name {
+  margin-top: 8px;
+}
+
 @media screen and (max-width: 600px) {
   .experience-detail {
+    font-size: medium;
+
     h1 {
       font-size: large;
     }
@@ -45,8 +51,18 @@
 
 @media screen and (max-width: 400px) {
   .experience-detail {
+    font-size: small;
+
     h1 {
       font-size: medium;
+    }
+
+    h2 {
+      font-size: small;
+    }
+
+    h3 {
+      font-size: small;
     }
   }
 }

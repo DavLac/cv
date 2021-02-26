@@ -1,5 +1,6 @@
 export const COMMONS_EN = {
   welcome: "Hi there ! I am",
+  aboutMeTitle: "About me",
   workExperienceTitle: "Working Experiences",
   dateWordDelimiter: "to",
   today: "Today",

@@ -8,6 +8,7 @@ import {
   Chip,
 } from "@material-ui/core";
 
+// @ts-ignore
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import parse from 'html-react-parser';
 
@@ -94,7 +95,7 @@ const displayTechStackElements = (elements: any) => {
   });
 
   return (
-    <div>
+    <div className={"experience-group-name"}>
       <span>{elements.groupName} :</span>
       {elementsJsx}
     </div>

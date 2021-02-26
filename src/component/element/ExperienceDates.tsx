@@ -11,19 +11,22 @@ export const ExperienceDates = (props: Props) => {
   const { t } = useTranslation();
 
   return (
-    <Typography variant="body2" color="textSecondary">
-      {dateToString(props.endContractDate)}
-      <br />
-      {t("common:dateWordDelimiter")}
-      <br />
-      {dateToString(props.startContractDate)}
-      <br />
-      <strong style={{ fontSize: "medium" }}>
-        {displayDuration(
-          stringToDate(props.startContractDate),
-          stringToDate(props.endContractDate)
-        )}
-      </strong>
+    <Typography variant="body2"
+                color="textSecondary">
+      <span className={"experience-dates"}>
+        {dateToString(props.endContractDate)}
+        <br />
+        {t("common:dateWordDelimiter")}
+        <br />
+        {dateToString(props.startContractDate)}
+        <br />
+        <strong>
+          {displayDuration(
+            stringToDate(props.startContractDate),
+            stringToDate(props.endContractDate)
+          )}
+        </strong>
+      </span>
     </Typography>
   );
 };

@@ -25,8 +25,11 @@ export const Experiences = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <Container maxWidth={false} className="container-custom">
-      <h1 className="container-title experience-title">
+    <Container
+      disableGutters={true}
+      maxWidth={false}
+      className="container-custom container-darken">
+      <h1 className="container-title">
         {t("common:workExperienceTitle")}
       </h1>
       <Timeline className="timeline-experience">
@@ -74,7 +77,7 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
       <TimelineOppositeContent
         style={{
           flex: "0",
-          padding: "6px 16px 0 3px",
+          padding: "12px 0 0 0",
         }}
         className={"timeline-opposite-content"}
       >
@@ -83,11 +86,11 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
           endContractDate={endDate}
         />
       </TimelineOppositeContent>
-      <TimelineSeparator>
+      <TimelineSeparator className={"experience-separator"}>
         <TimelineDot className="experience-timelinedot" color={"inherit"} />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>
+      <TimelineContent style={{padding: "12px 0 0 0"}}>
         <ExperienceDetails roleDetails={roleDetails} />
       </TimelineContent>
     </TimelineItem>

@@ -11,7 +11,7 @@ export const RawProfileData = () => {
   profile.roles = [];
 
   return (
-    <Container maxWidth={false} className="container-custom container-darken">
+    <Container maxWidth={false} className="container-custom">
       <CodeBlock
         title={t("common:rawProfileTitle")}
         language="Json"
