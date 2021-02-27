@@ -5,25 +5,99 @@ export const TRANSLATIONS_FR = {
   profile: {
     firstname: "David",
     surname: "Lacoste",
-    birthdayDate: "1988-06-23",
+    birthdayDate: "1988-06",
+    mail: "david.lacoste2@gmail.com",
+    nationality: "Français",
+    status: "A l'écoute d'opportunités",
     currentRole: "Fullstack/Backend React/Java développeur",
     currentLocation: {
       city: "Paris",
-      country: "FRANCE",
+      country: "FRANCE"
     },
+    quickIntro:
+      "I'm a Java/React fullstack developer with 4 years of experience",
     generalInformations:
-      "Développeur backend Java avec 4 ans d'expérience" +
-      " et 8 ans d'expérience professionnelle globale. " +
-      "Je peux aider en tant que " +
-      "développeur fullstack. J'ai une bonne compréhension d'une " +
-      "architecture de microservice avec une infrastructure solide" +
-      "background (système et réseau). Je n'ai pas peur de gérer les " +
-      "serveurs Windows / Linux. Mon objectif est de travailler dans" +
-      "des projets stimulants avec des membres d'équipe aux multiples " +
-      "facettes et m'aider avec mon expérience pour atteindre " +
-      "les objectifs commerciaux" +
-      "avec qualité et efficacité.",
+      "I have a good understanding of a " +
+      "microservice architecture with a solid infrastructure " +
+      "background (system & network). I’m not afraid to manage " +
+      "Windows/Linux servers. My goal is to work in " +
+      "challenging projects with multifaceted team members and " +
+      "help with my experience to achieve business objectives " +
+      "with quality and efficiency.",
     roles: ROLES_FR,
     other: OTHER_FR,
-  },
+    skills: [
+      {
+        groupName: "Backend",
+        level: 85,
+        list: [
+          "Java (5 to 11)",
+          "BDD & TDD",
+          "SpringBoot",
+          "Spring Batch/Data",
+          "Python 3 scripting",
+          "multithreading", "Hazelcast", "EhCache"
+        ]
+      },
+      {
+        groupName: "Frontend",
+        level: 60,
+        list: ["React", "Javascript", "HTML/CSS"]
+      },
+      {
+        groupName: "Microservices architecture",
+        level: 75,
+        list: [
+          "JHipster platform",
+          "API Gateway - Zuul proxy",
+          "load balancing",
+          "Spring security, Oauth2",
+          "Registry - Eureka server",
+          "Spring Cloud Config",
+          "Generating microservices",
+          "REST APIs",
+          "SOAP webservices"
+        ]
+      },
+      {
+        groupName: "Data management",
+        level: 75,
+        list: [
+          "ElasticSearch",
+          "Logstash + Kibana",
+          "SQL Server",
+          "MongoDB",
+          "Kafka",
+          "RabbitMQ"
+        ]
+      },
+      {
+        groupName: "DevOps",
+        level: 75,
+        list: [
+          "Git",
+          "BitBucket",
+          "Jenkins",
+          "Rundeck",
+          "Docker",
+          "Kubernetes"
+        ]
+      },
+      {
+        groupName: "Code quality",
+        level: 85,
+        list: [
+          "unitary and int tests",
+          "Cucumber",
+          "Jacoco",
+          "Sonar",
+          "jMeter"
+        ]
+      },
+      {
+        groupName: "Other",
+        list: ["Scrum team"]
+      }
+    ]
+  }
 };

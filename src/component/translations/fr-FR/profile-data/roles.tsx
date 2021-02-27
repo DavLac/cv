@@ -5,16 +5,16 @@ export const ROLES_FR = {
       company: {
         name: "Nippon Telegraph and Telephone (NTT)",
         website: "https://www.linkedin.com/company/global-ntt/mycompany/",
-        sector: "Telecom",
+        sector: "Telecom"
       },
       contract: {
         type: "Permanent",
         startDate: "2018-10-01",
-        endDate: undefined,
+        endDate: undefined
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription: "<p>" +
         "Main website project : managing life cycle of telecom " +
@@ -35,16 +35,16 @@ export const ROLES_FR = {
             "BDD & TDD",
             "SpringBoot",
             "Spring Batch/Data",
-            "Python 3 scripting",
-          ],
+            "Python 3 scripting"
+          ]
         },
         {
           groupName: "Frontend",
-          list: ["React", "Javascript", "HTML/CSS"],
+          list: ["React", "Javascript", "HTML/CSS"]
         },
         {
           groupName: "Performance",
-          list: ["multithreading", "Hazelcast", "EhCache"],
+          list: ["multithreading", "Hazelcast", "EhCache"]
         },
         {
           groupName: "Microservices architecture",
@@ -57,8 +57,8 @@ export const ROLES_FR = {
             "Spring Cloud Config",
             "Generating microservices",
             "REST APIs",
-            "SOAP webservices",
-          ],
+            "SOAP webservices"
+          ]
         },
         {
           groupName: "Data management",
@@ -68,8 +68,8 @@ export const ROLES_FR = {
             "SQL Server",
             "MongoDB",
             "Kafka",
-            "RabbitMQ",
-          ],
+            "RabbitMQ"
+          ]
         },
         {
           groupName: "DevOps",
@@ -79,8 +79,8 @@ export const ROLES_FR = {
             "Jenkins",
             "Rundeck",
             "Docker",
-            "Kubernetes",
-          ],
+            "Kubernetes"
+          ]
         },
         {
           groupName: "Code quality",
@@ -89,31 +89,31 @@ export const ROLES_FR = {
             "Cucumber",
             "Jacoco",
             "Sonar",
-            "jMeter",
-          ],
+            "jMeter"
+          ]
         },
         {
           groupName: "Other",
-          list: ["Scrum team"],
-        },
+          list: ["Scrum team"]
+        }
       ],
-      training: ["AWS Certified Developer Associate (training - nov 2020)"],
+      training: ["AWS Certified Developer Associate (training - nov 2020)"]
     },
     {
-      position: "Fullstack AngularJS/Java developer",
+      position: "Fullstack Angular/Java developer",
       company: {
         name: "French department of Interior",
         website: "https://www.linkedin.com/company/ministere-de-l-interieur/",
-        sector: "Government - administration",
+        sector: "Government - administration"
       },
       contract: {
         type: "Permanent",
         startDate: "2017-01-01",
-        endDate: "2018-09-30",
+        endDate: "2018-09-30"
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription:
         "<p>" +
@@ -140,8 +140,8 @@ export const ROLES_FR = {
             "Python 3 scripting",
             "Microservices",
             "REST api",
-            "Web services SOAP",
-          ],
+            "Web services SOAP"
+          ]
         },
         {
           groupName: "Frontend",
@@ -152,26 +152,26 @@ export const ROLES_FR = {
             "CSS",
             "Less",
             "Bootstrap",
-            "KarmaJS",
-          ],
-        },
-      ],
+            "KarmaJS"
+          ]
+        }
+      ]
     },
     {
       position: "System and virtualization engineer/DevOps",
       company: {
         name: "Orange Business Services",
         website: "https://www.linkedin.com/company/orange-business-services/",
-        sector: "Telecom",
+        sector: "Telecom"
       },
       contract: {
         type: "Permanent",
         startDate: "2013-01-01",
-        endDate: "2016-12-31",
+        endDate: "2016-12-31"
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription:
         "<p>" +
@@ -199,15 +199,15 @@ export const ROLES_FR = {
             "VMware 5",
             "Nutanix",
             "Netapp ONTAP",
-            "Splunk, Zabbix",
-          ],
+            "Splunk, Zabbix"
+          ]
         },
         {
           groupName: "Developer",
-          list: ["PHP", "Javascript", "SQL", "Powershell", "Python 2"],
-        },
-      ],
-    },
+          list: ["PHP", "Javascript", "SQL", "Powershell", "Python 2"]
+        }
+      ]
+    }
   ],
   student: [
     {
@@ -215,16 +215,16 @@ export const ROLES_FR = {
       company: {
         name: "SFR",
         website: "https://www.linkedin.com/company/sfr/",
-        sector: "Telecom",
+        sector: "Telecom"
       },
       contract: {
         type: "Apprentice",
         startDate: "2010-09-01",
-        endDate: "2012-09-30",
+        endDate: "2012-09-30"
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription:
         "<p>" +
@@ -233,51 +233,51 @@ export const ROLES_FR = {
         "des données en base<br/>" +
         "Gérer des projets sécurité<br/>" +
         "Porter les règles et normes SFR dans les projets" +
-        "</p>",
+        "</p>"
     },
     {
       position: "Network technician - Radar engineering team",
       company: {
         name: "Thales",
         website: "https://www.linkedin.com/company/thales/",
-        sector: "Defence",
+        sector: "Defence"
       },
       contract: {
         type: "Trainee",
         startDate: "2010-03-01",
-        endDate: "2010-08-30",
+        endDate: "2010-08-30"
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription:
         "<p>" +
         "Déploiement de nouveaux moyens d’essais Radar (réseau)<br/>" +
         "Interopérabilité technologies radars/ethernet<br/>" +
         "Soutien réseau/système" +
-        "</p>",
+        "</p>"
     },
     {
       position: "Fullstack PHP developer",
       company: {
         name: "ANSM",
         website: "#",
-        sector: "Website development & SEO",
+        sector: "Website development & SEO"
       },
       contract: {
         type: "Trainee",
         startDate: "2008-06-01",
-        endDate: "2008-09-30",
+        endDate: "2008-09-30"
       },
       location: {
         city: "Paris",
-        country: "FRANCE",
+        country: "FRANCE"
       },
       jobDescription:
         "<p>" +
         "Référencement, création de site (HTML/CSS/PHP/SQL)" +
-        "</p>",
-    },
-  ],
+        "</p>"
+    }
+  ]
 };

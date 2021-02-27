@@ -1,10 +1,10 @@
 import React from "react";
-import "../translations/i18n";
-import { i18nFunction } from "../translations/i18n";
+import "../../translations/i18n";
+import { i18nFunction } from "../../translations/i18n";
 
 import TranslateIcon from "@material-ui/icons/Translate";
 
-import { Language } from "../translations/Language";
+import { Language } from "../../translations/Language";
 
 const handleSelectOnChange = (event: React.ChangeEvent<{ value: unknown }>) => {
   event.preventDefault();

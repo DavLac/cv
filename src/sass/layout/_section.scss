@@ -7,11 +7,34 @@
   background-color: $primary-color-2;
 }
 
+.container-light {
+  background-color: $primary-color;
+}
+
 .container-title {
   text-align: center;
   font-size: xxx-large;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 700;
   padding-left: 10vw;
   padding-right: 10vw;
   margin-bottom: 3rem;
+}
+
+.container-child {
+  margin-bottom: 2rem;
+  padding: 0;
+
+  h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-title {
+    font-size: xx-large;
+  }
 }

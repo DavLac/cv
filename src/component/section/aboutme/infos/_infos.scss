@@ -1,0 +1,63 @@
+.container-child--infos {
+  margin: 32px;
+}
+
+.aboutme-quick-intro {
+  color: $third-color;
+  font-style: italic;
+  padding-top: 0;
+  padding-bottom: 35px;
+  font-size: large;
+}
+
+.aboutme-info-text {
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+.aboutme-info-field {
+  margin-top: 10px;
+  display: inline-block;
+  width: 175px;
+  font-weight: 600;
+}
+
+.aboutme-info-points {
+  margin-right: 20px;
+}
+
+.aboutme-info-value {
+  color: $third-color;
+}
+
+.aboutme-info-field,
+.aboutme-info-points,
+.aboutme-info-value {
+  font-size: large;
+}
+
+@media screen and (max-width: 530px) {
+  .aboutme-info-field,
+  .aboutme-info-points,
+  .aboutme-info-value {
+    font-size: medium;
+  }
+
+  .aboutme-info-field {
+    width: 130px;
+  }
+
+  .aboutme-info-points {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aboutme-info-value {
+
+  }
+
+  .aboutme-info-field {
+    width: auto;
+  }
+}

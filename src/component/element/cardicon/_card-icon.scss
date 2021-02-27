@@ -1,0 +1,46 @@
+$card-icon-square: 130px;
+$card-icon-square-small: 120px;
+
+.card-icon {
+  display: block;
+  text-align: center;
+  padding: 25px 5px 25px 5px;
+  margin: 5px;
+
+  width: $card-icon-square;
+  min-width: $card-icon-square;
+  height: $card-icon-square;
+  min-height: $card-icon-square;
+
+  border-radius: 5px;
+  background-color: $primary-color-2;
+  color: $third-color-3;
+
+  font-size: large;
+  font-weight: 600;
+
+  transition: background-color 0.5s, color 0.5s;
+
+  .card-icon--icon {
+    color: $secondary-color;
+    font-size: xxx-large;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+
+    .card-icon--icon {
+      color: $primary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-icon {
+    width: $card-icon-square-small;
+    min-width: $card-icon-square-small;
+    height: $card-icon-square-small;
+    min-height: $card-icon-square-small;
+  }
+}

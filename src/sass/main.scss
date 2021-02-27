@@ -4,18 +4,22 @@
 
 @import "base/base";
 
-@import "component/app";
-@import "component/code-block";
-@import "component/lang-selection";
-@import "component/experience-details";
-@import "component/experience-dates";
-@import "component/fab-download-cv";
+@import "../component/app/app";
+@import "../component/header/language/lang-selection";
+@import "../component/section/aboutme/infos/infos";
+@import "../component/section/aboutme/skills/skills";
+@import "../component/section/aboutme/whatcanido/what-can-i-do";
+@import "../component/section/experience/details/experience-details";
+@import "../component/section/experience/dates/experience-dates";
+@import "../component/element/fabdownloadcv/fab-download-cv";
+@import "../component/element/cardicon/card-icon";
 
-@import "layout/header";
+@import "../component/header/header";
 @import "layout/section";
-@import "layout/aboutme";
-@import "layout/experience";
-@import "layout/footer";
+@import "../component/section/aboutme/aboutme";
+@import "../component/section/experience/experience";
+@import "../component/footer/footer";
+
 
 @import "../../node_modules/bulma/bulma.sass";
 

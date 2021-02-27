@@ -1,0 +1,87 @@
+.header-container {
+  background-size: cover;
+  background-position: top center;
+
+  height: 100vh;
+  min-height: 175px;
+
+  h2 {
+    color: $fourth-color;
+    font-weight: 500;
+    font-size: xxx-large;
+    margin-top: 20vh;
+  }
+
+  h1 {
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: $xxxx-large;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $primary-color;
+    font-size: $xxx-large-2;
+    font-weight: 300;
+    font-family: Lato, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .header-icons {
+    color: $fourth-color;
+    font-size: xxx-large;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-height: 600px), screen and (max-width: 600px) {
+  .header-container {
+    h2 {
+      font-size: xx-large;
+    }
+
+    h1 {
+      font-size: xxx-large;
+    }
+
+    h3 {
+      font-size: xx-large;
+    }
+
+    .header-icons {
+      font-size: xx-large;
+    }
+  }
+}
+
+@media screen and (max-height: 500px), screen and (max-width: 400px) {
+  .header-container {
+    h2 {
+      font-size: x-large;
+    }
+
+    h1 {
+      font-size: xx-large;
+    }
+
+    h3 {
+      font-size: x-large;
+    }
+
+    .header-icons {
+      font-size: x-large;
+    }
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .header-container {
+    h2 {
+      margin-top: 10vh;
+    }
+  }
+}

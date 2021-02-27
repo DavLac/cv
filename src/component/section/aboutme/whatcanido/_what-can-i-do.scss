@@ -1,0 +1,25 @@
+.container-child--whatcanido {
+  margin: 4rem 32px 32px 32px;
+}
+
+.whatcanido-card-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 500px) {
+  .whatcanido-card-icons {
+    justify-content: center;
+  }
+
+  .container-child--whatcanido {
+    margin: 4rem 16px 16px 16px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

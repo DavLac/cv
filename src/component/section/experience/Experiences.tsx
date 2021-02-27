@@ -1,5 +1,5 @@
 import React from "react";
-import "../translations/i18n";
+import "../../translations/i18n";
 import Timeline from "@material-ui/lab/Timeline";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -8,16 +8,10 @@ import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import { useTranslation } from "react-i18next";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Container,
-} from "@material-ui/core";
-import { ExperienceDetails } from "../element/ExperienceDetails";
-import { ExperienceDates } from "../element/ExperienceDates";
+import { Accordion, AccordionDetails, AccordionSummary, Container } from "@material-ui/core";
+import { ExperienceDetails } from "./details/ExperienceDetails";
+import { ExperienceDates } from "./dates/ExperienceDates";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Typography from "@material-ui/core/Typography";
 
 export const Experiences = () => {
   const { t } = useTranslation();
@@ -42,11 +36,11 @@ export const Experiences = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>
+          <div>
             <h1 className="experience-student-title">
               {t("common:studentExperienceTitle")}
             </h1>
-          </Typography>
+          </div>
         </AccordionSummary>
 
         <AccordionDetails>
@@ -73,7 +67,7 @@ const displayRoles = (roles: any) => {
 
 const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
   return (
-    <TimelineItem>
+    <TimelineItem key={roleDetails.position}>
       <TimelineOppositeContent
         style={{
           flex: "0",

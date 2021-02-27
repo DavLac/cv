@@ -1,16 +1,10 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import { useTranslation } from "react-i18next";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Chip,
-} from "@material-ui/core";
+import { Accordion, AccordionDetails, AccordionSummary, Chip } from "@material-ui/core";
 
 // @ts-ignore
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import parse from 'html-react-parser';
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import parse from "html-react-parser";
 
 interface Props {
   roleDetails: any;
@@ -26,11 +20,10 @@ export const ExperienceDetails = (props: Props) => {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography className={"experience-detail"}>
+        <div className={"experience-detail"}>
           <h1>{props.roleDetails.position}</h1>
           <h3>
-            @
-            <a href={props.roleDetails.company.website}>
+            @ <a href={props.roleDetails.company.website}>
               {props.roleDetails.company.name}
             </a>{" "}
             - {props.roleDetails.company.sector}
@@ -40,11 +33,11 @@ export const ExperienceDetails = (props: Props) => {
             {props.roleDetails.location.city} /{" "}
             {props.roleDetails.location.country}
           </h3>
-        </Typography>
+        </div>
       </AccordionSummary>
 
       <AccordionDetails>
-        <Typography className={"experience-detail"}>
+        <div className={"experience-detail"}>
           {parse(props.roleDetails.jobDescription)}
 
           {props.roleDetails.training != undefined &&
@@ -62,7 +55,7 @@ export const ExperienceDetails = (props: Props) => {
               {displayTechStack(props.roleDetails.technicalStack)}
             </span>
           ) : null}
-        </Typography>
+        </div>
       </AccordionDetails>
     </Accordion>
   );
@@ -72,7 +65,7 @@ const displayTechStack = (technicalStack: any) => {
   const techStackJsx: any[] = [];
 
   technicalStack.map((group: any) => {
-    techStackJsx.push(<div>{displayTechStackElements(group)}</div>);
+    techStackJsx.push(<div key={group.groupName}>{displayTechStackElements(group)}</div>);
   });
 
   return <div>{techStackJsx}</div>;
@@ -84,6 +77,7 @@ const displayTechStackElements = (elements: any) => {
   elements.list.map((element: string) => {
     elementsJsx.push(
       <Chip
+        key={element}
         label={element}
         size={"small"}
         className={"experience-chip"}
@@ -105,7 +99,7 @@ const displayTrainings = (trainings: string[]) => {
   const trainingJsx: any[] = [];
 
   trainings.map((training: string) => {
-    trainingJsx.push(<li>{training}</li>);
+    trainingJsx.push(<li key={training}>{training}</li>);
   });
 
   return <ul className={"experience-training--ul"}>{trainingJsx}</ul>;

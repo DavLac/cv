@@ -1,0 +1,43 @@
+$primary: $secondary-color;
+
+.container-child--skills {
+  margin: 32px;
+}
+
+.skills-group-name {
+  font-weight: 500;
+  font-size: large;
+}
+
+.skill-element {
+  display: inline-block;
+  border: 1px solid $third-color;
+  border-radius: 15px;
+  padding: 3px 7px 4px 7px;
+  margin: 1px;
+
+  font-size: small;
+  background-color: $primary-color-2;
+
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+  .container-child--skills {
+    margin: 16px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .skills-group-name {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skills-group-name {
+    font-size: small;
+  }
+}
