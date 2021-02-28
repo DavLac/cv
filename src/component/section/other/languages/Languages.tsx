@@ -4,12 +4,14 @@ import { useTranslation } from "react-i18next";
 const displayLanguages = (languages: any) => {
   const interestsJsx: any[] = [];
 
-  languages.map((language: any) => {
+  languages.map((language: any, index: number) => {
       interestsJsx.push(
-        <div className={"language-name"}>{language.language}</div>
+        <div key={language.language + index} className={"language-name"}>
+          {language.language}
+        </div>
       );
       interestsJsx.push(
-        <div className={"language-progress-bar"}>
+        <div key={language.levelPourcentage + index} className={"language-progress-bar"}>
           <progress className="progress is-primary is-small"
                     value={language.levelPourcentage}
                     max="100">
@@ -18,7 +20,9 @@ const displayLanguages = (languages: any) => {
         </div>
       );
       interestsJsx.push(
-        <div className={"language-level"}>{language.level}</div>
+        <div key={language.level + index} className={"language-level"}>
+          {language.level}
+        </div>
       );
     }
   );
