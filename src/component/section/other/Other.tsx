@@ -2,11 +2,9 @@ import React from "react";
 import "../../translations/i18n";
 import { Container, Grid } from "@material-ui/core";
 import { Education } from "./education/Education";
-// import { useTranslation } from "react-i18next";
+import { Interests } from "./interests/Interests";
 
 export const Other = () => {
-  // const { t } = useTranslation();
-
   return (
     <Container maxWidth={false} className="container-custom container-light">
       <div className={"grid-container-custom"}>
@@ -24,10 +22,7 @@ export const Other = () => {
               <p>content</p>
             </div>
 
-            <div className={"grid-item-custom"}>
-              <h1>INTERESTS</h1>
-              <p>content</p>
-            </div>
+            <Interests />
 
           </Grid>
         </Grid>

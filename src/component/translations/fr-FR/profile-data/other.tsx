@@ -1,3 +1,5 @@
+import { InterestType } from "../../../section/other/interests/InterestType";
+
 export const OTHER_FR = {
   education: [
     {
@@ -75,29 +77,30 @@ export const OTHER_FR = {
   interests: [
     {
       activity: "Fullstack development, personal projects",
-      type: "Coding",
+      typeName: "Coding",
+      type: InterestType.CODING,
       startDate: 2013,
       endDate: null
     },
     {
       activity: "Guitar, public performances",
-      type: "Music",
+      typeName: "Music",
+      type: InterestType.MUSIC,
       startDate: 2018,
       endDate: null
     },
     {
       activity: "Ultra trail (100miles/170km), triathlon (Ironman), marathons",
-      type: "Sport",
+      typeName: "Sport",
+      type: InterestType.SPORT,
       startDate: 2016,
       endDate: null
     },
     {
-      activity:
-        "Wine and Spirit Education Trust level 3 diploma, " +
-        "French national blind tasting wine championship (RVF), " +
-        "jury for wine fairs",
-      type: "Sport",
-      startDate: 2013,
+      activity: "Europe, Asia, America",
+      typeName: "Traveling",
+      type: InterestType.TRAVEL,
+      startDate: 2012,
       endDate: null
     }
   ]

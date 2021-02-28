@@ -1,0 +1,72 @@
+$card-icon-text-width: 250px;
+
+.card-icon-text {
+  padding: 15px;
+  margin: 5px;
+
+  width: $card-icon-text-width;
+  min-width: $card-icon-text-width;
+
+  border-radius: 5px;
+  background-color: $primary-color-2;
+  color: $third-color-3;
+
+  font-size: large;
+  font-weight: 600;
+
+  .card-icon-text--title-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .card-icon-text--icon {
+    display: inline-block;
+    border: 5px solid $primary-color-3;
+    border-radius: 50%;
+    shape-outside: border-box;
+    background-color: $primary-color;
+
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+
+    text-align: center;
+
+    color: $secondary-color;
+    font-size: xx-large;
+
+    transition: background-color 0.5s;
+  }
+
+  h2 {
+    display: inline-block;
+    color: $lighter-black;
+    font-size: x-large;
+    font-weight: 600;
+    margin-left: 15px;
+
+    transition: color 0.5s;
+  }
+
+  .card-icon-text--description {
+    margin-top: 5px;
+    font-size: medium;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    .card-icon-text--icon {
+      color: $primary-color;
+      background-color: $secondary-color;
+    }
+
+    h2 {
+      color: $secondary-color;
+    }
+  }
+}

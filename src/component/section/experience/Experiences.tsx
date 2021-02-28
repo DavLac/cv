@@ -81,7 +81,7 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
         <TimelineDot className="timeline-item-dot" color={"inherit"} />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>
+      <TimelineContent style={{paddingRight: "0"}}>
         <ExperienceDetails roleDetails={roleDetails} />
       </TimelineContent>
     </TimelineItem>

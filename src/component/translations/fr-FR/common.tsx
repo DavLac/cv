@@ -32,4 +32,5 @@ export const COMMONS_FR = {
   // OTHER
   educationTitle: "Education",
   diplomaDegree: "niveau",
+  interestsTitle: "Centre d'intérets",
 };
