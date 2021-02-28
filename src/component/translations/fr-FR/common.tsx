@@ -34,4 +34,13 @@ export const COMMONS_FR = {
   diplomaDegree: "niveau",
   interestsTitle: "Centre d'intérets",
   languagesTitle: "Langues",
+
+  // ABOUT THE APP
+  aboutAppTitle: "A propos du site",
+  appGenerationDescription: "Ce projet a ete généré avec",
+  sourceCode: "Code source",
+  hostedOn: "Hébergé sur",
+
+  // FOOTER
+  currentVersion: "version actuelle",
 };

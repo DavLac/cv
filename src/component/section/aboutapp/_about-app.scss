@@ -1,0 +1,27 @@
+
+.about-app-content {
+  text-align: center;
+  font-size: large;
+}
+
+.about-app-logos {
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+
+  column-gap: 10px;
+
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+  img {
+    width: 70px;
+  }
+}
+
+.about-app-icon {
+  font-size: xxx-large;
+}

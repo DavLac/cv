@@ -1,8 +1,11 @@
 .footer-container {
   font-size: large;
-  color: $third-color;
+  color: $primary-color;
   text-align: center;
   padding-bottom: 5rem;
+  padding-top: 5rem;
+
+  background-color: $lighter-black;
 
   strong {
     color: $secondary-color;

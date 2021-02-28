@@ -22,7 +22,7 @@ export const Experiences = () => {
     <Container
       disableGutters={true}
       maxWidth={false}
-      className="container-custom container-darken">
+      className="container-custom container-dark">
       <h1 className="container-title">
         {t("common:workExperienceTitle")}
       </h1>
