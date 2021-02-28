@@ -4,7 +4,7 @@ import { OTHER_EN } from "./other";
 export const TRANSLATIONS_EN = {
   profile: {
     firstname: "David",
-    surname: "Lacoste",
+    surname: "LACOSTE",
     birthdayDate: "1988-06",
     mail: "david.lacoste2@gmail.com",
     nationality: "French",

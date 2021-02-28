@@ -21,16 +21,9 @@
   margin-bottom: 3rem;
 }
 
-.container-child {
+.container-title-left {
+  text-align: left;
   margin-bottom: 2rem;
-  padding: 0;
-
-  h1 {
-    font-size: xx-large;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-  }
 }
 
 @media screen and (max-width: 400px) {

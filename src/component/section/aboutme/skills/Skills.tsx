@@ -62,7 +62,7 @@ export const Skills = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <div className={"container-child container-child--skills"}>
+    <div className={"grid-item-custom"}>
       <h1>{t("common:skillsTitle")}</h1>
       <div>
         {displaySkills(profileData.skills)}

@@ -1,14 +1,6 @@
-.aboutme-grid {
-  flex: 1;
-  margin-left: 7vw;
-  margin-right: 7vw;
-}
-
 .aboutme-title {
   color: $secondary-color;
   font-size: $xxxx-large;
-  text-align: left;
-  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 400px) {

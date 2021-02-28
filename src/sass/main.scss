@@ -4,13 +4,16 @@
 
 @import "base/base";
 
+@import "element/grid";
+@import "element/timeline-item";
+
 @import "../component/app/app";
 @import "../component/header/language/lang-selection";
 @import "../component/section/aboutme/infos/infos";
 @import "../component/section/aboutme/skills/skills";
 @import "../component/section/aboutme/whatcanido/what-can-i-do";
 @import "../component/section/experience/details/experience-details";
-@import "../component/section/experience/dates/experience-dates";
+@import "../component/section/other/education/education";
 @import "../component/element/fabdownloadcv/fab-download-cv";
 @import "../component/element/cardicon/card-icon";
 
@@ -18,6 +21,7 @@
 @import "layout/section";
 @import "../component/section/aboutme/aboutme";
 @import "../component/section/experience/experience";
+@import "../component/section/other/other";
 @import "../component/footer/footer";
 
 

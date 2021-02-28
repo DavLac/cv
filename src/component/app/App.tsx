@@ -6,6 +6,7 @@ import "../translations/i18n";
 import { Experiences } from "../section/experience/Experiences";
 import { AboutMe } from "../section/aboutme/AboutMe";
 import { FabDownloadCv } from "../element/fabdownloadcv/FabDownloadCv";
+import { Other } from "../section/other/Other";
 
 // eslint-disable-next-line require-jsdoc
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <AboutMe />
       <Experiences />
+      <Other />
       <Footer />
 
       {/* fixed elements */}

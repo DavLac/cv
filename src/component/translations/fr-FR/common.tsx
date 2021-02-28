@@ -28,4 +28,8 @@ export const COMMONS_FR = {
   technicalStackTitle: "Environnement technique",
   trainingTitle: "Formation",
   studentExperienceTitle: "Expériences étudiantes (Apprentissage, Stages)",
+
+  // OTHER
+  educationTitle: "Education",
+  diplomaDegree: "niveau",
 };

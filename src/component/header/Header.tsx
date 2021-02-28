@@ -41,8 +41,8 @@ export const Header = () => {
                className="header-container"
                style={{
                  backgroundImage: `linear-gradient(to right bottom, 
-                      rgba(11, 32, 27, 1), 
-                      rgba(11, 32, 27, 0.6) 50%, 
+                      rgba(11, 32, 27, 1) 25%, 
+                      rgba(11, 32, 27, 0.75) 50%, 
                       rgba(11, 32, 27, 0) 75%), 
                       url(${getBackgroundImgByMediaQueries()})`
                }}

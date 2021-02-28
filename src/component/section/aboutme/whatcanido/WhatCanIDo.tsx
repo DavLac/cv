@@ -10,7 +10,7 @@ export const WhatCanIDo = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={"container-child container-child--whatcanido"}>
+    <div className={"grid-item-custom"}>
       <h1>{t("common:whatCanIDoTitle")}</h1>
 
       <div className={"whatcanido-card-icons"}>

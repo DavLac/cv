@@ -16,10 +16,10 @@ const displayInfos = (infoFields: any) => {
     elementsJsx.push(
       <li key={infoField.field}>
         <span style={{ display: "inline-block" }}>
-          <span className={"aboutme-info-field"}>{infoField.field}</span>
-          <span className={"aboutme-info-points"}> :</span>
+          <span className={"infos-field"}>{infoField.field}</span>
+          <span className={"infos-points-separator"}> :</span>
         </span>
-        <span className={"aboutme-info-value"}>{infoField.value}</span>
+        <span className={"infos-value"}>{infoField.value}</span>
       </li>
     );
   });
@@ -65,11 +65,11 @@ export const Infos = () => {
   ];
 
   return (
-    <div className={"container-child container-child--infos"}>
-      <p className={"aboutme-quick-intro"}>
+    <div className={"grid-item-custom"}>
+      <p className={"infos-quick-intro"}>
         {profileData.quickIntro}
       </p>
-      <Typography className={"aboutme-info-text"}>
+      <Typography className={"infos-text"}>
         {profileData.generalInformations}
       </Typography>
       {displayInfos(infoFields)}

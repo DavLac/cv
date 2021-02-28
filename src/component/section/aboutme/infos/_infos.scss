@@ -1,8 +1,4 @@
-.container-child--infos {
-  margin: 32px;
-}
-
-.aboutme-quick-intro {
+.infos-quick-intro {
   color: $third-color;
   font-style: italic;
   padding-top: 0;
@@ -10,54 +6,50 @@
   font-size: large;
 }
 
-.aboutme-info-text {
+.infos-text {
   text-align: justify;
   padding-bottom: 30px;
 }
 
-.aboutme-info-field {
+.infos-field {
   margin-top: 10px;
   display: inline-block;
   width: 175px;
   font-weight: 600;
 }
 
-.aboutme-info-points {
+.infos-points-separator {
   margin-right: 20px;
 }
 
-.aboutme-info-value {
+.infos-value {
   color: $third-color;
 }
 
-.aboutme-info-field,
-.aboutme-info-points,
-.aboutme-info-value {
+.infos-field,
+.infos-points-separator,
+.infos-value {
   font-size: large;
 }
 
 @media screen and (max-width: 530px) {
-  .aboutme-info-field,
-  .aboutme-info-points,
-  .aboutme-info-value {
+  .infos-field,
+  .infos-points-separator,
+  .infos-value {
     font-size: medium;
   }
 
-  .aboutme-info-field {
+  .infos-field {
     width: 130px;
   }
 
-  .aboutme-info-points {
+  .infos-points-separator {
     margin-right: 5px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .aboutme-info-value {
-
-  }
-
-  .aboutme-info-field {
+  .infos-field {
     width: auto;
   }
 }

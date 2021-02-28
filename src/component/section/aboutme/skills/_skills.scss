@@ -1,9 +1,5 @@
 $primary: $secondary-color;
 
-.container-child--skills {
-  margin: 32px;
-}
-
 .skills-group-name {
   font-weight: 500;
   font-size: large;
@@ -23,14 +19,6 @@ $primary: $secondary-color;
 }
 
 @media screen and (max-width: 500px) {
-  .container-child--skills {
-    margin: 16px;
-
-    h1 {
-      text-align: center;
-    }
-  }
-
   .skills-group-name {
     font-size: medium;
   }

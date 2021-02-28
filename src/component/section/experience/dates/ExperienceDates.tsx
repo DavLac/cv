@@ -13,7 +13,7 @@ export const ExperienceDates = (props: Props) => {
   return (
     <Typography variant="body2"
                 color="textSecondary">
-      <span className={"experience-dates"}>
+      <span className={"timeline-item-dates"}>
         {dateToString(props.endContractDate)}
         <br />
         {t("common:dateWordDelimiter")}

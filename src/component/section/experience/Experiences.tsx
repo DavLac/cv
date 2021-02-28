@@ -69,10 +69,7 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
   return (
     <TimelineItem key={roleDetails.position}>
       <TimelineOppositeContent
-        style={{
-          flex: "0",
-          padding: "12px 0 0 0",
-        }}
+        style={{ flex: "0", padding: "0" }}
         className={"timeline-opposite-content"}
       >
         <ExperienceDates
@@ -80,11 +77,11 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
           endContractDate={endDate}
         />
       </TimelineOppositeContent>
-      <TimelineSeparator className={"experience-separator"}>
-        <TimelineDot className="experience-timelinedot" color={"inherit"} />
+      <TimelineSeparator className={"timeline-item-separator"}>
+        <TimelineDot className="timeline-item-dot" color={"inherit"} />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent style={{padding: "12px 0 0 0"}}>
+      <TimelineContent>
         <ExperienceDetails roleDetails={roleDetails} />
       </TimelineContent>
     </TimelineItem>

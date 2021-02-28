@@ -20,7 +20,7 @@ export const ExperienceDetails = (props: Props) => {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <div className={"experience-detail"}>
+        <div className={"timeline-content"}>
           <h1>{props.roleDetails.position}</h1>
           <h3>
             @ <a href={props.roleDetails.company.website}>
@@ -37,7 +37,7 @@ export const ExperienceDetails = (props: Props) => {
       </AccordionSummary>
 
       <AccordionDetails>
-        <div className={"experience-detail"}>
+        <div className={"timeline-content"}>
           {parse(props.roleDetails.jobDescription)}
 
           {props.roleDetails.training != undefined &&
