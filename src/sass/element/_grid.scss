@@ -5,7 +5,7 @@
 }
 
 .grid-item-custom {
-  margin: 32px;
+  margin: 40px 32px 40px 32px;
   padding: 0;
 
   h1 {
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 500px) {
   .grid-item-custom {
-    margin: 16px;
+    margin: 40px 16px 40px 16px;
 
     h1 {
       text-align: center;

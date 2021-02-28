@@ -62,16 +62,19 @@ export const OTHER_FR = {
   ],
   languages: [
     {
-      language: "English",
-      level: "Professional working proficiency"
+      language: "Anglais",
+      level: "Courant",
+      levelPourcentage: 75
     },
     {
-      language: "French",
-      level: "Native"
+      language: "Français",
+      level: "Langue maternelle",
+      levelPourcentage: 100
     },
     {
-      language: "Polish",
-      level: "Fluent"
+      language: "Polonais",
+      level: "Courant",
+      levelPourcentage: 75
     }
   ],
   interests: [

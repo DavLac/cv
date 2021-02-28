@@ -1,0 +1,26 @@
+.languages-div {
+  display: grid;
+  grid-template-columns: 75px auto 80px;
+  grid-template-rows: auto;
+
+  column-gap: 20px;
+  row-gap: 20px;
+
+  align-items: center;
+  justify-content: stretch;
+}
+
+.language-name {
+  font-size: large;
+  font-weight: 600;
+}
+
+.language-progress-bar {
+  min-width: 50px;
+  justify-self: stretch;
+}
+
+.language-level {
+  color: $third-color;
+  font-style: italic;
+}

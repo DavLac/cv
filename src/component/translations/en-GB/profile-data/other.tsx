@@ -66,15 +66,18 @@ export const OTHER_EN = {
   languages: [
     {
       language: "English",
-      level: "Professional working proficiency"
+      level: "Fluent",
+      levelPourcentage: 75
     },
     {
       language: "French",
-      level: "Native"
+      level: "Native",
+      levelPourcentage: 100
     },
     {
       language: "Polish",
-      level: "Fluent"
+      level: "Fluent",
+      levelPourcentage: 75
     }
   ],
   interests: [
