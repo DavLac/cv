@@ -16,7 +16,9 @@ export const Education = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <div className={"grid-item-custom"}>
+    <div
+      id={"anchor-education"}
+      className={"grid-item-custom"}>
       <h1>{t("common:educationTitle")}</h1>
 
       <Timeline style={{ padding: "0" }}>

@@ -63,7 +63,7 @@ export const Skills = () => {
 
   return (
     <div className={"grid-item-custom"}>
-      <h1>{t("common:skillsTitle")}</h1>
+      <h1 id={"anchor-skills"}>{t("common:skillsTitle")}</h1>
       <div>
         {displaySkills(profileData.skills)}
       </div>

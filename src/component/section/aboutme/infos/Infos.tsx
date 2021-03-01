@@ -2,6 +2,7 @@ import React from "react";
 import "../../../translations/i18n";
 import { useTranslation } from "react-i18next";
 import { Typography } from "@material-ui/core";
+import Avatar from "avataaars";
 
 const calculateAge = (birthday: string): number => {
   const ageDiff = Date.now() - new Date(birthday).getTime();
@@ -69,9 +70,27 @@ export const Infos = () => {
       <p className={"infos-quick-intro"}>
         {profileData.quickIntro}
       </p>
-      <Typography className={"infos-text"}>
-        {profileData.generalInformations}
-      </Typography>
+
+      <div className={"infos-text-and-avatar"}>
+        <Avatar
+          style={{ width: "150px", height: "200px", paddingBottom: "30px" }}
+          avatarStyle="Circle"
+          topType="ShortHairShortFlat"
+          accessoriesType="Round"
+          hairColor="BlondeGolden"
+          facialHairType="BeardLight"
+          facialHairColor="BlondeGolden"
+          clotheType="Hoodie"
+          clotheColor="Blue03"
+          eyeType="Wink"
+          eyebrowType="UpDownNatural"
+          mouthType="Default"
+          skinColor="Light" />
+
+        <Typography className={"infos-text"} style={{ display: "inline-box" }}>
+          {profileData.generalInformations}
+        </Typography>
+      </div>
       {displayInfos(infoFields)}
     </div>
   );

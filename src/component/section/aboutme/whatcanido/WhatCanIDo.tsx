@@ -11,7 +11,7 @@ export const WhatCanIDo = () => {
 
   return (
     <div className={"grid-item-custom"}>
-      <h1>{t("common:whatCanIDoTitle")}</h1>
+      <h1 id={"anchor-whatcanido"}>{t("common:whatCanIDoTitle")}</h1>
 
       <div className={"whatcanido-card-icons"}>
         <CardIcon icon={<FormatPaintIcon className={"card-icon--icon"} />}

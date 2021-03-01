@@ -42,7 +42,9 @@ export const Interests = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <div className={"grid-item-custom"}>
+    <div
+      id={"anchor-interests"}
+      className={"grid-item-custom"}>
       <h1>{t("common:interestsTitle")}</h1>
 
       {displayInterests(profileData.other.interests)}

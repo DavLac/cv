@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "0.1.0-dev",
+  "version": "1.0.0",
   "private": true,
   "homepage": "http://davlac.github.io/cv",
   "dependencies": {
@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "avataaars": "^1.2.1",
     "bulma": "^0.9.2",
     "font-awesome": "^4.7.0",
     "html-react-parser": "^1.2.4",

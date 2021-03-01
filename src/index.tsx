@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./sass/main.scss";
-import App from "./component/app/App";
-import reportWebVitals from "./reportWebVitals";
+import { App } from "./component/app/App";
 import "font-awesome/css/font-awesome.min.css";
 
 ReactDOM.render(
@@ -11,8 +10,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

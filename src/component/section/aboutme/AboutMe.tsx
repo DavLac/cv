@@ -11,7 +11,8 @@ export const AboutMe = () => {
 
   return (
     <Container maxWidth={false} className="container-custom container-light">
-      <h1 className="container-title container-title-left aboutme-title">
+      <h1 id={"anchor-infos"}
+        className="container-title container-title-left aboutme-title">
         {t("common:aboutMeTitle")}
       </h1>
 
@@ -20,10 +21,10 @@ export const AboutMe = () => {
           <Grid item xs={12} md={6}
                 style={{ padding: "inherit" }}>
             <Infos />
-            <WhatCanIDo />
           </Grid>
           <Grid item xs={12} md={6}
                 style={{ padding: "inherit" }}>
+            <WhatCanIDo />
             <Skills />
           </Grid>
         </Grid>

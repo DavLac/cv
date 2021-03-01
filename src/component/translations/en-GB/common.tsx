@@ -1,46 +1,72 @@
 import { Language } from "../Language";
 
 export const COMMONS_EN = {
-  lang: Language.EN,
+    lang: Language.EN,
 
-  // HEADER
-  welcome: "Hi there ! I am",
+    // HEADER
+    welcome: "Hi there ! I am",
 
-  // ABOUT ME
-  aboutMeTitle: "About me",
+    // ABOUT ME
+    aboutMeTitle: "About me",
 
-  fieldName: "Name",
-  fieldEmail: "E-mail",
-  fieldCurrentLocation: "Current location",
-  fieldNationality: "Nationality",
-  fieldAge: "Age",
-  fieldStatus: "Status",
+    fieldName: "Name",
+    fieldEmail: "E-mail",
+    fieldCurrentLocation: "Current location",
+    fieldNationality: "Nationality",
+    fieldAge: "Age",
+    fieldStatus: "Status",
 
-  whatCanIDoTitle: "What can I do",
-  skillsTitle: "Skills",
+    whatCanIDoTitle: "What can I do",
+    skillsTitle: "Skills",
 
-  // EXPERIENCES
-  workExperienceTitle: "Working Experiences",
-  dateWordDelimiter: "to",
-  today: "Today",
-  monthShort: "m",
-  yearShort: "y",
-  technicalStackTitle: "Technical stack",
-  trainingTitle: "Training",
-  studentExperienceTitle: "Student experiences (Apprentice, Trainee)",
+    // EXPERIENCES
+    workExperienceTitle: "Working Experiences",
+    dateWordDelimiter: "to",
+    today: "Today",
+    monthShort: "m",
+    yearShort: "y",
+    technicalStackTitle: "Technical stack",
+    trainingTitle: "Training",
+    studentExperienceTitle: "Student experiences (Apprentice, Trainee)",
 
-  // OTHER
-  educationTitle: "Education",
-  diplomaDegree: "degree",
-  interestsTitle: "Interests",
-  languagesTitle: "Languages",
+    // OTHER
+    educationTitle: "Education",
+    diplomaDegree: "degree",
+    interestsTitle: "Interests",
+    languagesTitle: "Languages",
 
-  // ABOUT THE APP
-  aboutAppTitle: "About the app",
-  appGenerationDescription: "This project was bootstrapped with",
-  sourceCode: "Source code",
-  hostedOn: "Hosted on",
+    // ABOUT THE APP
+    aboutAppTitle: "About the app",
+    appGenerationDescription: "This project was bootstrapped with",
+    sourceCode: "Source code",
+    hostedOn: "Hosted on",
 
-  // FOOTER
-  currentVersion: "current version",
-};
+    // FOOTER
+    currentVersion: "current version",
+
+    // DRAWER - MENU
+    drawer: {
+      headerGroup: {
+        name: "Home"
+      },
+      aboutMeGroup: {
+        name: "About me",
+        infos: "Infos",
+        whatCanIDo: "What can I do",
+        Skills: "Skills",
+      },
+      experienceGroup: {
+        name: "Work experiences"
+      },
+      miscGroup: {
+        name: "Misc",
+        education: "Education",
+        languages: "Languages",
+        interests: "Interests",
+      },
+      aboutTheApp: {
+        name: "About the App"
+      }
+    }
+  }
+;

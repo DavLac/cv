@@ -43,4 +43,29 @@ export const COMMONS_FR = {
 
   // FOOTER
   currentVersion: "version actuelle",
+
+  // DRAWER - MENU
+  drawer: {
+    headerGroup: {
+      name: "Accueil"
+    },
+    aboutMeGroup: {
+      name: "A propos de moi",
+      infos: "Infos",
+      whatCanIDo: "Je sais faire...",
+      Skills: "Compétences",
+    },
+    experienceGroup: {
+      name: "Expériences Pro"
+    },
+    miscGroup: {
+      name: "Divers",
+      education: "Education",
+      languages: "Langues",
+      interests: "Centre d'intérets",
+    },
+    aboutTheApp: {
+      name: "A propos du site"
+    }
+  }
 };

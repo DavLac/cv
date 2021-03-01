@@ -37,7 +37,8 @@ export const Header = () => {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth={false}
+    <Container id={"anchor-header"}
+               maxWidth={false}
                className="header-container"
                style={{
                  backgroundImage: `linear-gradient(to right bottom, 

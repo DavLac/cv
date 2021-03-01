@@ -13,7 +13,10 @@ export const AboutApp = () => {
   const { t } = useTranslation();
 
   return (
-    <Container maxWidth={false} className="container-custom container-dark">
+    <Container
+      id={"anchor-about-app"}
+      maxWidth={false}
+      className="container-custom container-dark">
       <h1 className="container-title">
         {t("common:aboutAppTitle")}
       </h1>

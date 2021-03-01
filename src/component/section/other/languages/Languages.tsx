@@ -36,7 +36,9 @@ export const Languages = () => {
   const profileData: any = t("profileData:profile", { returnObjects: true });
 
   return (
-    <div className={"grid-item-custom"}>
+    <div
+      id={"anchor-languages"}
+      className={"grid-item-custom"}>
       <h1>{t("common:languagesTitle")}</h1>
 
       {displayLanguages(profileData.other.languages)}
