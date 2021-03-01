@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.aaede0d5.chunk.css",
-    "main.js": "/cv/static/js/main.78881580.chunk.js",
-    "main.js.map": "/cv/static/js/main.78881580.chunk.js.map",
-    "runtime-main.js": "/cv/static/js/runtime-main.f1a732e3.js",
-    "runtime-main.js.map": "/cv/static/js/runtime-main.f1a732e3.js.map",
+    "main.css": "/cv/static/css/main.56c24afa.chunk.css",
+    "main.js": "/cv/static/js/main.887e5e55.chunk.js",
+    "main.js.map": "/cv/static/js/main.887e5e55.chunk.js.map",
+    "runtime-main.js": "/cv/static/js/runtime-main.45546e74.js",
+    "runtime-main.js.map": "/cv/static/js/runtime-main.45546e74.js.map",
     "static/css/2.c36de93b.chunk.css": "/cv/static/css/2.c36de93b.chunk.css",
-    "static/js/2.7bdb15fb.chunk.js": "/cv/static/js/2.7bdb15fb.chunk.js",
-    "static/js/2.7bdb15fb.chunk.js.map": "/cv/static/js/2.7bdb15fb.chunk.js.map",
-    "static/js/3.d0b550cc.chunk.js": "/cv/static/js/3.d0b550cc.chunk.js",
-    "static/js/3.d0b550cc.chunk.js.map": "/cv/static/js/3.d0b550cc.chunk.js.map",
+    "static/js/2.7ab9015c.chunk.js": "/cv/static/js/2.7ab9015c.chunk.js",
+    "static/js/2.7ab9015c.chunk.js.map": "/cv/static/js/2.7ab9015c.chunk.js.map",
     "index.html": "/cv/index.html",
     "static/css/2.c36de93b.chunk.css.map": "/cv/static/css/2.c36de93b.chunk.css.map",
-    "static/css/main.aaede0d5.chunk.css.map": "/cv/static/css/main.aaede0d5.chunk.css.map",
-    "static/js/2.7bdb15fb.chunk.js.LICENSE.txt": "/cv/static/js/2.7bdb15fb.chunk.js.LICENSE.txt",
+    "static/css/main.56c24afa.chunk.css.map": "/cv/static/css/main.56c24afa.chunk.css.map",
+    "static/js/2.7ab9015c.chunk.js.LICENSE.txt": "/cv/static/js/2.7ab9015c.chunk.js.LICENSE.txt",
     "static/media/boreal-aurora-1920x1279.5c08af5a.jpg": "/cv/static/media/boreal-aurora-1920x1279.5c08af5a.jpg",
     "static/media/boreal-aurora-2400x1599.65a1e9d5.jpg": "/cv/static/media/boreal-aurora-2400x1599.65a1e9d5.jpg",
     "static/media/boreal-aurora-640x426.36437914.jpg": "/cv/static/media/boreal-aurora-640x426.36437914.jpg",
@@ -22,10 +20,10 @@
     "static/media/logo-sass.3a064caf.png": "/cv/static/media/logo-sass.3a064caf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1a732e3.js",
+    "static/js/runtime-main.45546e74.js",
     "static/css/2.c36de93b.chunk.css",
-    "static/js/2.7bdb15fb.chunk.js",
-    "static/css/main.aaede0d5.chunk.css",
-    "static/js/main.78881580.chunk.js"
+    "static/js/2.7ab9015c.chunk.js",
+    "static/css/main.56c24afa.chunk.css",
+    "static/js/main.887e5e55.chunk.js"
   ]
 }
