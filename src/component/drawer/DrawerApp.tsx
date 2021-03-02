@@ -10,16 +10,17 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { Divider, Fab, ListSubheader } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import {
+  faBriefcase,
   faCode,
   faHome,
-  faUser,
-  faWrench,
-  faBriefcase,
-  faUniversity,
   faLanguage,
+  faQuestionCircle,
   faTheaterMasks,
-  faQuestionCircle
+  faUniversity,
+  faUser,
+  faWrench
 } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const menuData = (drawerData: any) => {
@@ -71,6 +72,11 @@ const menuData = (drawerData: any) => {
           linkName: drawerData.miscGroup.education,
           icon: <FontAwesomeIcon icon={faUniversity} className={"drawer-icon"} />,
           anchorLink: "#anchor-education"
+        },
+        {
+          linkName: drawerData.miscGroup.petProjects,
+          icon: <FontAwesomeIcon icon={faStar} className={"drawer-icon"} />,
+          anchorLink: "#anchor-pet-project"
         },
         {
           linkName: drawerData.miscGroup.languages,
@@ -147,22 +153,29 @@ export const DrawerApp = () => {
     );
   };
 
+  const displayGroupTitle = (index: number, group: string) => {
+    if (index === 0) {
+      return undefined;
+    }
+
+    return <ListSubheader component="div" id="nested-list-subheader">
+      <span className={"drawer-nested-group"}>{group}</span>
+    </ListSubheader>;
+  };
+
   const displayGroups = (menuData: any) => {
     const groupsJsx: any[] = [];
 
-    menuData.map((menuDataGroup: any) => {
+    menuData.map((menuDataGroup: any, index: number) => {
       groupsJsx.push(
         <List
+          key={menuDataGroup.group}
           aria-labelledby="nested-list-subheader"
-          subheader={
-            <ListSubheader component="div" id="nested-list-subheader">
-              <span className={"drawer-nested-group"}>{menuDataGroup.group}</span>
-            </ListSubheader>
-          }
-          key={menuDataGroup.group}>
+          subheader={displayGroupTitle(index, menuDataGroup.group)}
+        >
           {displayListElements(menuDataGroup.list)}
         </List>);
-      groupsJsx.push(<Divider />);
+      groupsJsx.push(<Divider key={menuDataGroup.group + index} />);
     });
 
     return groupsJsx;

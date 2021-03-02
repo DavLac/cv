@@ -1,0 +1,57 @@
+.pet-projects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-projects-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+  width: 375px;
+
+  .pet-project-details {
+    margin-left: 10px;
+  }
+
+  .pet-project-icon {
+    width: 75px;
+    text-align: center;
+    font-size: xxx-large;
+    color: $lighter-black;
+  }
+
+  h2 {
+    color: $lighter-black;
+    font-size: large;
+    font-weight: 500;
+  }
+
+  p {
+    color: $third-color;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pet-projects-list {
+    width: 220px;
+
+    .pet-project-icon {
+      width: 40px;
+      font-size: xx-large;
+    }
+
+    h2 {
+      font-size: medium;
+    }
+
+    a, p {
+      font-size: small;
+    }
+  }
+}

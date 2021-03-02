@@ -7,6 +7,7 @@ import { Experiences } from "../section/experience/Experiences";
 import { AboutMe } from "../section/aboutme/AboutMe";
 import { Other } from "../section/other/Other";
 import { AboutApp } from "../section/aboutapp/AboutApp";
+import { ScrollToTop } from "../element/scrolltop/ScrollToTop";
 
 export const Content = () => {
   return (
@@ -17,6 +18,8 @@ export const Content = () => {
       <Other />
       <AboutApp />
       <Footer />
+
+      <ScrollToTop />
     </div>
   );
-}
+};

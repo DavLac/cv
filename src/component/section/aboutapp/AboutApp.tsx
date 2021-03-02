@@ -23,8 +23,11 @@ export const AboutApp = () => {
 
       <div className={"about-app-content"}>
         <p>
-          {t("common:appGenerationDescription")} <a href={"https://github.com/facebook/create-react-app"}>Create React
-          App</a>
+          {t("common:appGenerationDescription")} {" "}
+          <a className={"create-react-app-link"}
+            href={"https://github.com/facebook/create-react-app"}>
+            Create React App
+          </a>
         </p>
 
         <div className={"about-app-logos"}>

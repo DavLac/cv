@@ -34,6 +34,7 @@ export const COMMONS_EN = {
     diplomaDegree: "degree",
     interestsTitle: "Interests",
     languagesTitle: "Languages",
+    petProjectTitle: "Pet projects",
 
     // ABOUT THE APP
     aboutAppTitle: "About the app",
@@ -53,16 +54,17 @@ export const COMMONS_EN = {
         name: "About me",
         infos: "Infos",
         whatCanIDo: "What can I do",
-        Skills: "Skills",
+        Skills: "Skills"
       },
       experienceGroup: {
         name: "Work experiences"
       },
       miscGroup: {
-        name: "Misc",
+        name: "Miscellaneous",
         education: "Education",
+        petProjects: "Pet projects",
         languages: "Languages",
-        interests: "Interests",
+        interests: "Interests"
       },
       aboutTheApp: {
         name: "About the App"

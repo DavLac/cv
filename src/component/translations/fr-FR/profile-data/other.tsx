@@ -23,13 +23,13 @@ export const OTHER_FR = {
       graduationYear: 2010
     },
     {
-      schoolName: "St Aspais high school",
+      schoolName: "Lycée St Aspais",
       location: {
         city: "Melun",
         country: "FRANCE"
       },
-      diplomaLevel: "High school",
-      diplomaName: "Scientific high school diploma",
+      diplomaLevel: "Lycée",
+      diplomaName: "Bac scientifique",
       graduationYear: 2007
     }
   ],
@@ -75,6 +75,20 @@ export const OTHER_FR = {
       language: "Polonais",
       level: "Courant",
       levelPourcentage: 75
+    }
+  ],
+  petProjects: [
+    {
+      name: "GitHub",
+      description: "Mes projets back et front",
+      url: "https://github.com/DavLac",
+      link: "github.com/DavLac"
+    },
+    {
+      name: "Docker Hub",
+      description: "Mes apps conteneurisées",
+      url: "https://hub.docker.com/",
+      link: "hub.docker.com/u/davlac"
     }
   ],
   interests: [

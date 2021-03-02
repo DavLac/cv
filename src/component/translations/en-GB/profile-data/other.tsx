@@ -80,6 +80,20 @@ export const OTHER_EN = {
       levelPourcentage: 75
     }
   ],
+  petProjects: [
+    {
+      name: "GitHub",
+      description: "My back and front projects",
+      url: "https://github.com/DavLac",
+      link: "github.com/DavLac"
+    },
+    {
+      name: "Docker Hub",
+      description: "My containerized apps",
+      url: "https://hub.docker.com/u/davlac",
+      link: "hub.docker.com/u/davlac"
+    }
+  ],
   interests: [
     {
       activity: "Fullstack development, personal projects",

@@ -31,25 +31,27 @@ export const Experiences = () => {
         {displayRoles(profileData.roles.worker)}
       </Timeline>
 
-      <Accordion className="experience-student-accordion">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <div>
-            <h1 className="experience-student-title">
-              {t("common:studentExperienceTitle")}
-            </h1>
-          </div>
-        </AccordionSummary>
+      <div className="experience-student-accordion">
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <div>
+              <h1 className="experience-student-title">
+                {t("common:studentExperienceTitle")}
+              </h1>
+            </div>
+          </AccordionSummary>
 
-        <AccordionDetails>
-          <Timeline className="timeline-experience">
-            {displayRoles(profileData.roles.student)}
-          </Timeline>
-        </AccordionDetails>
-      </Accordion>
+          <AccordionDetails>
+            <Timeline className="timeline-experience">
+              {displayRoles(profileData.roles.student)}
+            </Timeline>
+          </AccordionDetails>
+        </Accordion>
+      </div>
     </Container>
   );
 };
@@ -82,7 +84,7 @@ const timelineItem = (startDate: string, endDate: string, roleDetails: any) => {
         <TimelineDot className="timeline-item-dot" color={"inherit"} />
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent style={{paddingRight: "0"}}>
+      <TimelineContent style={{ paddingRight: "0" }}>
         <ExperienceDetails roleDetails={roleDetails} />
       </TimelineContent>
     </TimelineItem>

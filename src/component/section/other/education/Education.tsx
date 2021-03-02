@@ -9,6 +9,7 @@ import TimelineItem from "@material-ui/lab/TimelineItem";
 import Timeline from "@material-ui/lab/Timeline";
 import { Paper } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import { Language } from "../../../translations/Language";
 
 export const Education = () => {
   const { t } = useTranslation();
@@ -37,14 +38,31 @@ const displayDates = (educationElement: any) => {
   </Typography>;
 };
 
+const displayDiplomaLevel = (diplomaLevel: string,
+                             diplomaDegree: string,
+                             lang: string) => {
+  if (lang === Language.FR) {
+    return <h3>
+      {diplomaDegree} {diplomaLevel}
+    </h3>;
+  }
+
+  return <h3>
+    {diplomaLevel} {diplomaDegree}
+  </h3>;
+};
+
 const displayContent = (educationElement: any) => {
   const { t } = useTranslation();
 
   return <Paper elevation={3} className={"timeline-content timeline-content-education--paper"}>
     <h1>{educationElement.diplomaName}</h1>
-    <h3>
-      {educationElement.diplomaLevel} {t("common:diplomaDegree")}
-    </h3>
+
+    {displayDiplomaLevel(
+      educationElement.diplomaLevel,
+      t("common:diplomaDegree"),
+      t("common:lang"))}
+
     <h3>
       @ <a href={educationElement.schoolWebsite}>
       {educationElement.schoolName}

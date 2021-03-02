@@ -70,3 +70,9 @@ $card-icon-text-width: 250px;
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .card-icon-text {
+    pointer-events: none;
+  }
+}

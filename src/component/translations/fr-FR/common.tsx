@@ -31,9 +31,10 @@ export const COMMONS_FR = {
 
   // OTHER
   educationTitle: "Education",
-  diplomaDegree: "niveau",
+  diplomaDegree: "Niveau",
   interestsTitle: "Centre d'intérets",
   languagesTitle: "Langues",
+  petProjectTitle: "Projets personels",
 
   // ABOUT THE APP
   aboutAppTitle: "A propos du site",
@@ -53,7 +54,7 @@ export const COMMONS_FR = {
       name: "A propos de moi",
       infos: "Infos",
       whatCanIDo: "Je sais faire...",
-      Skills: "Compétences",
+      Skills: "Compétences"
     },
     experienceGroup: {
       name: "Expériences Pro"
@@ -61,8 +62,9 @@ export const COMMONS_FR = {
     miscGroup: {
       name: "Divers",
       education: "Education",
+      petProjects: "Projets perso",
       languages: "Langues",
-      interests: "Centre d'intérets",
+      interests: "Centre d'intérets"
     },
     aboutTheApp: {
       name: "A propos du site"

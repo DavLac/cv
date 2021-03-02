@@ -36,6 +36,12 @@ $card-icon-square-small: 120px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .card-icon {
+    pointer-events: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .card-icon {
     width: $card-icon-square-small;

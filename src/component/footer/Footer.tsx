@@ -11,7 +11,8 @@ export const Footer = () => {
 
   return (
     <Container maxWidth={false} className={"container-custom footer-container"}>
-      © Copyright <strong>David Lacoste</strong> {currentYear} - {t("common:currentVersion")} : {packageJson.version}
+      © Copyright <strong>David Lacoste</strong> {currentYear} -{" "}
+      <span className={"footer-app-version"}>{t("common:currentVersion")} : {packageJson.version}</span>
     </Container>
   );
 };

@@ -2,9 +2,10 @@ import React from "react";
 import "../../translations/i18n";
 import { i18nFunction } from "../../translations/i18n";
 
-import TranslateIcon from "@material-ui/icons/Translate";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 import { Language } from "../../translations/Language";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const handleSelectOnChange = (event: React.ChangeEvent<{ value: unknown }>) => {
   event.preventDefault();
@@ -26,7 +27,7 @@ export const SelectLanguage = () => {
           </select>
         </div>
         <span className="icon is-left">
-          <TranslateIcon className={"translateIcon"} />
+          <FontAwesomeIcon icon={faGlobe} className={"translate-icon"} />
         </span>
       </div>
     </div>
