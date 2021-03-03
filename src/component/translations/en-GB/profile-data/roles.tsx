@@ -262,7 +262,6 @@ export const ROLES_EN = {
       position: "Fullstack PHP developer",
       company: {
         name: "ANSM",
-        website: "#",
         sector: "Website development & SEO"
       },
       contract: {

@@ -1,0 +1,17 @@
+.container-contact-about-app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    color: $lighter-black;
+    font-size: xx-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+

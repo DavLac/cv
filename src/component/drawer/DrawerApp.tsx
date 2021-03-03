@@ -11,7 +11,7 @@ import { Divider, Fab, ListSubheader } from "@material-ui/core";
 import { useTranslation } from "react-i18next";
 import {
   faBriefcase,
-  faCode,
+  faCode, faEnvelope,
   faHome,
   faLanguage,
   faQuestionCircle,
@@ -91,10 +91,15 @@ const menuData = (drawerData: any) => {
       ]
     },
     {
-      group: drawerData.aboutTheApp.name,
+      group: drawerData.aboutTheAppContact.name,
       list: [
         {
-          linkName: drawerData.aboutTheApp.name,
+          linkName: drawerData.aboutTheAppContact.contact,
+          icon: <FontAwesomeIcon icon={faEnvelope} className={"drawer-icon"} />,
+          anchorLink: "#anchor-contact"
+        },
+        {
+          linkName: drawerData.aboutTheAppContact.aboutApp,
           icon: <FontAwesomeIcon icon={faQuestionCircle} className={"drawer-icon"} />,
           anchorLink: "#anchor-about-app"
         }

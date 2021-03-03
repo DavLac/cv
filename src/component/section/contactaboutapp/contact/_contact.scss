@@ -1,0 +1,51 @@
+.contact-container {
+  padding: 30px;
+  width: 20vw;
+  min-width: 260px;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-template-rows: 30px 30px 30px;
+
+  column-gap: 10px;
+  row-gap: 15px;
+
+  align-items: center;
+
+  padding: 10px;
+}
+
+.contact-icon {
+  font-size: xx-large;
+}
+
+.contact-value {
+  font-size: large;
+}
+
+.button-icon {
+  font-size: large;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-list {
+    column-gap: 5px;
+  }
+
+  .contact-icon, .contact-value {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .contact-list {
+    column-gap: 0;
+  }
+
+  .contact-value {
+    font-size: small;
+  }
+}

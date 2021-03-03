@@ -1,4 +1,6 @@
 import { InterestType } from "../../../section/other/interests/InterestType";
+import { PetProjectType } from "../../../section/other/petprojects/PetProjectType";
+import { PetProjectName } from "../../../section/other/petprojects/PetProjectName";
 
 export const OTHER_EN = {
   education: [
@@ -82,16 +84,28 @@ export const OTHER_EN = {
   ],
   petProjects: [
     {
+      id: PetProjectName.MANAGE_ITEMS,
+      name: "My last project",
+      description: "Project : Manage items",
+      url: "https://github.com/DavLac/manage-items-main-container-front",
+      link: "github.com/DavLac/manage-items",
+      type: PetProjectType.MODAL_DETAIL_LINK
+    },
+    {
+      id: PetProjectName.GITHUB,
       name: "GitHub",
       description: "My back and front projects",
       url: "https://github.com/DavLac",
-      link: "github.com/DavLac"
+      link: "github.com/DavLac",
+      type: PetProjectType.SIMPLE_LINK
     },
     {
+      id: PetProjectName.DOCKER,
       name: "Docker Hub",
       description: "My containerized apps",
       url: "https://hub.docker.com/u/davlac",
-      link: "hub.docker.com/u/davlac"
+      link: "hub.docker.com/u/davlac",
+      type: PetProjectType.SIMPLE_LINK
     }
   ],
   interests: [

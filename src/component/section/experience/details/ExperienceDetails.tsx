@@ -23,9 +23,9 @@ export const ExperienceDetails = (props: Props) => {
         <div className={"timeline-content"}>
           <h1>{props.roleDetails.position}</h1>
           <h3>
-            @ <a href={props.roleDetails.company.website}>
-              {props.roleDetails.company.name}
-            </a>{" "}
+            @ {(props.roleDetails.company.website)
+            ? <a href={props.roleDetails.company.website}>{props.roleDetails.company.name}</a>
+            : <span>{props.roleDetails.company.name}</span>}{" "}
             - {props.roleDetails.company.sector}
           </h3>
           <h3>

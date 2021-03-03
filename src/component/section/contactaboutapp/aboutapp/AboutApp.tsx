@@ -1,6 +1,5 @@
 import React from "react";
-import "../../translations/i18n";
-import { Container } from "@material-ui/core";
+import "../../../translations/i18n";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logoMaterialUi from "./img/logo-material-ui.png";
@@ -13,19 +12,14 @@ export const AboutApp = () => {
   const { t } = useTranslation();
 
   return (
-    <Container
-      id={"anchor-about-app"}
-      maxWidth={false}
-      className="container-custom container-dark">
-      <h1 className="container-title">
-        {t("common:aboutAppTitle")}
-      </h1>
+    <div className={"about-app-container"} id={"anchor-about-app"}>
+      <h1>{t("common:aboutAppTitle")}</h1>
 
       <div className={"about-app-content"}>
         <p>
           {t("common:appGenerationDescription")} {" "}
           <a className={"create-react-app-link"}
-            href={"https://github.com/facebook/create-react-app"}>
+             href={"https://github.com/facebook/create-react-app"}>
             Create React App
           </a>
         </p>
@@ -57,6 +51,6 @@ export const AboutApp = () => {
           {t("common:hostedOn")} <a href={"https://pages.github.com/"}>GitHub Pages</a>
         </p>
       </div>
-    </Container>
+    </div>
   );
 };

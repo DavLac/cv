@@ -18,6 +18,8 @@
 @import "../component/section/other/interests/interests";
 @import "../component/section/other/languages/languages";
 @import "../component/section/other/petprojects/pet-projects";
+@import "../component/section/contactaboutapp/aboutapp/about-app";
+@import "../component/section/contactaboutapp/contact/contact";
 
 @import "../component/element/fabdownloadcv/fab-download-cv";
 @import "../component/element/cardicon/card-icon";
@@ -28,7 +30,7 @@
 @import "../component/section/aboutme/aboutme";
 @import "../component/section/experience/experience";
 @import "../component/section/other/other";
-@import "../component/section/aboutapp/about-app";
+@import "src/component/section/contactaboutapp/contact-about-app";
 @import "../component/footer/footer";
 
 

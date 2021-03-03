@@ -2,15 +2,64 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDocker, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faPoo, faStar } from "@fortawesome/free-solid-svg-icons";
 import { Paper } from "@material-ui/core";
+import { ModalInfo } from "../../../element/modal/ModalInfo";
+import { PetProjectType } from "./PetProjectType";
+import { PetProjectName } from "./PetProjectName";
+import { faQuestionCircle } from "@fortawesome/free-regular-svg-icons";
 
-const getIconByType = (type: string) => {
+const getIconByType = (type: PetProjectName) => {
   switch (type) {
-    case "GitHub":
+    case PetProjectName.MANAGE_ITEMS:
+      return <FontAwesomeIcon icon={faStar} style={{ color: "gold" }} />;
+    case PetProjectName.GITHUB:
       return <FontAwesomeIcon icon={faGithub} />;
-    case "Docker Hub":
+    case PetProjectName.DOCKER:
       return <FontAwesomeIcon icon={faDocker} />;
+    default:
+      return <FontAwesomeIcon icon={faQuestionCircle} />;
   }
+};
+
+const displayProjectDetail = (projectName: PetProjectName) => {
+  if (projectName === PetProjectName.MANAGE_ITEMS) {
+    return <p><FontAwesomeIcon icon={faPoo} />{" "}Details of my awesome project</p>
+  }
+
+  return <React.Fragment />
+}
+
+const displayDetailLink = (petProject: any) => {
+  const { t } = useTranslation();
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  if (petProject.type === PetProjectType.SIMPLE_LINK) {
+    return <a href={petProject.url}>{petProject.link}</a>;
+  }
+
+  return <span>
+      <a onClick={handleOpen}>
+        {t("common:getMoreDetails")}
+      </a>
+
+      <ModalInfo
+        title={"My awesome project"}
+        handleClose={handleClose}
+        open={open}
+      >
+        {displayProjectDetail(petProject.id)}
+      </ModalInfo>
+    </span>;
 };
 
 const displayPetProjects = (petProjects: any) => {
@@ -22,12 +71,12 @@ const displayPetProjects = (petProjects: any) => {
                elevation={3}
                className={"pet-projects-list"}>
           <div className={"pet-project-icon"}>
-            {getIconByType(petProject.name)}
+            {getIconByType(petProject.id)}
           </div>
           <div className={"pet-project-details"}>
             <h2>{petProject.name}</h2>
             <p>{petProject.description}</p>
-            <a href={petProject.url}>{petProject.link}</a>
+            {displayDetailLink(petProject)}
           </div>
         </Paper>
       );

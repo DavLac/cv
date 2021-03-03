@@ -35,8 +35,11 @@ export const COMMONS_FR = {
   interestsTitle: "Centre d'intérets",
   languagesTitle: "Langues",
   petProjectTitle: "Projets personels",
+  getMoreDetails: "en savoir plus...",
 
   // ABOUT THE APP
+  contactTitle: "Contact",
+  contactButton: "Me contacter",
   aboutAppTitle: "A propos du site",
   appGenerationDescription: "Ce projet a ete généré avec",
   sourceCode: "Code source",
@@ -66,8 +69,10 @@ export const COMMONS_FR = {
       languages: "Langues",
       interests: "Centre d'intérets"
     },
-    aboutTheApp: {
-      name: "A propos du site"
+    aboutTheAppContact: {
+      name: "Contact / Site",
+      contact: "Contact",
+      aboutApp: "A propos du site"
     }
   }
 };
