@@ -106,6 +106,14 @@ export const OTHER_EN = {
       url: "https://hub.docker.com/u/davlac",
       link: "hub.docker.com/u/davlac",
       type: PetProjectType.SIMPLE_LINK
+    },
+    {
+      id: PetProjectName.NPM,
+      name: "npm",
+      description: "My npm packages (front)",
+      url: "https://www.npmjs.com/~davlac",
+      link: "www.npmjs.com/~davlac",
+      type: PetProjectType.SIMPLE_LINK
     }
   ],
   interests: [

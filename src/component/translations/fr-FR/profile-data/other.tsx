@@ -101,6 +101,14 @@ export const OTHER_FR = {
       description: "Mes apps conteneurisées",
       url: "https://hub.docker.com/",
       type: PetProjectType.SIMPLE_LINK
+    },
+    {
+      id: PetProjectName.NPM,
+      name: "npm",
+      description: "Mes packages npm (front)",
+      url: "https://www.npmjs.com/~davlac",
+      link: "www.npmjs.com/~davlac",
+      type: PetProjectType.SIMPLE_LINK
     }
   ],
   interests: [

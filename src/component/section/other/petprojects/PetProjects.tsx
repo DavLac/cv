@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDocker, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDocker, faGithub, faNpm } from "@fortawesome/free-brands-svg-icons";
 import { faPoo, faStar } from "@fortawesome/free-solid-svg-icons";
 import { Paper } from "@material-ui/core";
 import { ModalInfo } from "../../../element/modal/ModalInfo";
@@ -17,6 +17,8 @@ const getIconByType = (type: PetProjectName) => {
       return <FontAwesomeIcon icon={faGithub} />;
     case PetProjectName.DOCKER:
       return <FontAwesomeIcon icon={faDocker} />;
+    case PetProjectName.NPM:
+      return <FontAwesomeIcon icon={faNpm} />;
     default:
       return <FontAwesomeIcon icon={faQuestionCircle} />;
   }

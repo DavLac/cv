@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import { SelectLanguage } from "./language/SelectLanguage";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDocker, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDocker, faLinkedin, faNpm } from "@fortawesome/free-brands-svg-icons";
 import BackgroundImgSmall from "./img/boreal-aurora-640x426.jpg";
 import BackgroundImgMedium from "./img/boreal-aurora-1920x1279.jpg";
 import BackgroundImgLarge from "./img/boreal-aurora-2400x1599.jpg";
@@ -60,6 +60,9 @@ export const Header = () => {
           </a>
           <a href={"https://hub.docker.com/u/davlac"}>
             <FontAwesomeIcon icon={faDocker} className={"header-icons"} />
+          </a>
+          <a href={"https://www.npmjs.com/~davlac"}>
+            <FontAwesomeIcon icon={faNpm} className={"header-icons"} />
           </a>
           <a href={"https://www.linkedin.com/in/david-lacoste-6a643b4b"}>
             <FontAwesomeIcon icon={faLinkedin} className={"header-icons"} />
