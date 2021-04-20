@@ -15,15 +15,14 @@ export const TRANSLATIONS_FR = {
       country: "FRANCE"
     },
     quickIntro:
-      "I'm a Java/React fullstack developer with 4 years of experience",
+      "Je suis un développeur fullstack Java/React avec 4 ans d'expérience",
     generalInformations:
-      "I have a good understanding of a " +
-      "microservice architecture with a solid infrastructure " +
-      "background (system & network). I’m not afraid to manage " +
-      "Windows/Linux servers. My goal is to work in " +
-      "challenging projects with multifaceted team members and " +
-      "help with my experience to achieve business objectives " +
-      "with quality and efficiency.",
+      "J'ai une bonne compréhension des architectures microservices avec " +
+      "une solide expérience en infrastructure (système et réseau). Je n’ai " +
+      "pas peur de gérer les serveurs Windows/Linux. Mon objectif est de " +
+      "travailler sur des projets stimulants avec des membres d'équipe aux " +
+      "facettes multiples et d'aider avec mon expérience à atteindre les " +
+      "objectifs business avec qualité et efficacité.",
     roles: ROLES_FR,
     other: OTHER_FR,
     skills: [
@@ -31,7 +30,7 @@ export const TRANSLATIONS_FR = {
         groupName: "Backend",
         level: 85,
         list: [
-          "Java (5 to 11)",
+          "Java (8 to 11)",
           "BDD & TDD",
           "SpringBoot",
           "Spring Batch/Data",
@@ -42,7 +41,9 @@ export const TRANSLATIONS_FR = {
       {
         groupName: "Frontend",
         level: 60,
-        list: ["React", "Javascript", "HTML/CSS"]
+        list: ["React (Hooks, Redux)",  "Javascript  ES6",
+          "Typescript",  "HTML/SCSS",  "Styled Component", "Material UI",
+          "Jest", "Cypress", "Material Design", "microfrontends"]
       },
       {
         groupName: "Microservices architecture",
@@ -84,7 +85,7 @@ export const TRANSLATIONS_FR = {
         ]
       },
       {
-        groupName: "Code quality",
+        groupName: "Qualité du code",
         level: 85,
         list: [
           "unitary and int tests",
@@ -95,7 +96,7 @@ export const TRANSLATIONS_FR = {
         ]
       },
       {
-        groupName: "Other",
+        groupName: "Autre",
         list: ["Scrum team"]
       }
     ]

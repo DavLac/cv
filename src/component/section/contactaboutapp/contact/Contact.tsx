@@ -15,7 +15,7 @@ const contactData = [
   },
   {
     icon: <FontAwesomeIcon icon={faPhoneSquareAlt} className={"contact-icon"} />,
-    value: "+33 6 12 34 56 78",
+    value: "+33 6 23 10 54 22",
     link: false
   },
   {
@@ -66,7 +66,6 @@ export const Contact = () => {
       <h1>{t("common:contactTitle")}</h1>
 
       <div className={"about-app-content"}>
-        {/* ADD STYLE BUTTON IN ONE PLACE */}
         <Button variant="contained"
                 onClick={handleOpen}
                 style={{ backgroundColor: "#2196d3", color: "white" }}

@@ -5,23 +5,23 @@ import { PetProjectName } from "../../../section/other/petprojects/PetProjectNam
 export const OTHER_FR = {
   education: [
     {
-      schoolName: "Versailles university",
+      schoolName: "Université de Versailles",
       location: {
         city: "Versailles",
         country: "FRANCE"
       },
       diplomaLevel: "Master",
-      diplomaName: "Master system and Network engineering",
+      diplomaName: "Ingénierie des Réseaux et des Systèmes",
       graduationYear: 2012
     },
     {
-      schoolName: "Electronical Central School of Paris (ECE)",
+      schoolName: "Ecole centrale d'électronique Paris (ECE)",
       location: {
         city: "Paris",
         country: "FRANCE"
       },
       diplomaLevel: "Bachelor",
-      diplomaName: "Bachelor computer science",
+      diplomaName: "Bachelor Informatique",
       graduationYear: 2010
     },
     {
@@ -113,14 +113,14 @@ export const OTHER_FR = {
   ],
   interests: [
     {
-      activity: "Fullstack development, personal projects",
+      activity: "Dévelopement fullstack, projets personels",
       typeName: "Coding",
       type: InterestType.CODING,
       startDate: 2013,
       endDate: null
     },
     {
-      activity: "Guitar, public performances",
+      activity: "Guitare, performances en public",
       typeName: "Music",
       type: InterestType.MUSIC,
       startDate: 2018,
@@ -135,7 +135,7 @@ export const OTHER_FR = {
     },
     {
       activity: "Europe, Asia, America",
-      typeName: "Traveling",
+      typeName: "Voyage",
       type: InterestType.TRAVEL,
       startDate: 2012,
       endDate: null

@@ -19,7 +19,7 @@ export const ROLES_EN = {
       jobDescription: "<p>" +
         "Main website project : managing life cycle of telecom " +
         "customer lines (activate, suspend…)<br/>" +
-        "Migrating monoliths (Java 5) to new microservices architecture " +
+        "Migrating monoliths to new microservices architecture " +
         "(React, Java 8 & 11), end to end projects, from scratch to production<br/>" +
         "Conception, building & performance testing REST APIs (about 5 " +
         "components and 50+ endpoints)<br/>" +
@@ -40,7 +40,9 @@ export const ROLES_EN = {
         },
         {
           groupName: "Frontend",
-          list: ["React", "Javascript", "HTML/CSS"]
+          list: ["React (Hooks, Redux)",  "Javascript  ES6",
+            "Typescript",  "HTML/SCSS",  "Styled Component", "Material UI",
+            "Jest", "Cypress", "Material Design", "microfrontends"]
         },
         {
           groupName: "Performance",

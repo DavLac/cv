@@ -31,7 +31,7 @@ export const TRANSLATIONS_EN = {
         groupName: "Backend",
         level: 85,
         list: [
-          "Java (5 to 11)",
+          "Java (8 to 11)",
           "BDD & TDD",
           "SpringBoot",
           "Spring Batch/Data",
@@ -42,7 +42,9 @@ export const TRANSLATIONS_EN = {
       {
         groupName: "Frontend",
         level: 60,
-        list: ["React", "Javascript", "HTML/CSS"]
+        list: ["React (Hooks, Redux)",  "Javascript  ES6",
+          "Typescript",  "HTML/SCSS",  "Styled Component", "Material UI",
+          "Jest", "Cypress", "Material Design", "microfrontends"]
       },
       {
         groupName: "Microservices architecture",

@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDocker, faGithub, faNpm } from "@fortawesome/free-brands-svg-icons";
-import { faPoo, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Paper } from "@material-ui/core";
 import { ModalInfo } from "../../../element/modal/ModalInfo";
 import { PetProjectType } from "./PetProjectType";
@@ -26,7 +26,7 @@ const getIconByType = (type: PetProjectName) => {
 
 const displayProjectDetail = (projectName: PetProjectName) => {
   if (projectName === PetProjectName.MANAGE_ITEMS) {
-    return <p><FontAwesomeIcon icon={faPoo} />{" "}Details of my awesome project</p>
+    return <p>Details of my last project</p>
   }
 
   return <React.Fragment />
@@ -55,7 +55,7 @@ const displayDetailLink = (petProject: any) => {
       </a>
 
       <ModalInfo
-        title={"My awesome project"}
+        title={"My last project"}
         handleClose={handleClose}
         open={open}
       >

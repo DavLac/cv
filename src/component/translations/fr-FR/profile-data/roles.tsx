@@ -1,14 +1,14 @@
 export const ROLES_FR = {
   worker: [
     {
-      position: "Backend/Fullstack React/Java developer",
+      position: "Backend/Fullstack React/Java développeur",
       company: {
         name: "Nippon Telegraph and Telephone (NTT)",
         website: "https://www.linkedin.com/company/global-ntt/mycompany/",
         sector: "Telecom"
       },
       contract: {
-        type: "Permanent",
+        type: "CDI",
         startDate: "2018-10-01",
         endDate: undefined
       },
@@ -17,15 +17,15 @@ export const ROLES_FR = {
         country: "FRANCE"
       },
       jobDescription: "<p>" +
-        "Main website project : managing life cycle of telecom " +
-        "customer lines (activate, suspend…)<br/>" +
-        "Migrating monoliths (Java 5) to new microservices architecture " +
-        "(React, Java 8 & 11), end to end projects, from scratch to production<br/>" +
-        "Conception, building & performance testing REST APIs (about 5 " +
-        "components and 50+ endpoints)<br/>" +
-        "Build React frontend interface : search and filter telecom processes.<br/>" +
-        "Scrum environment (3 weeks sprint)<br/>" +
-        "Python 3 scripting" +
+        "Projet site Web principal: gestion du cycle de vie des lignes télécom "+
+        "des client (activer, suspendre…) <br/>" +
+        "Migration de monolithes vers une nouvelle architecture microservices" +
+        "(React, Java 8 & 11), projets de bout en bout, de zéro en production <br/>" +
+        "Conception, création et test des performances d'API REST (environ 5" +
+        "composants et plus de 50 endpoints) <br/>" +
+        "Mise en place d'une interface frontend React: rechercher et filtrer des processus télécoms. <br/>" +
+        "Environnement Scrum (sprint de 3 semaines) <br/>" +
+        "Script Python 3" +
         "</p>",
       technicalStack: [
         {
@@ -40,7 +40,9 @@ export const ROLES_FR = {
         },
         {
           groupName: "Frontend",
-          list: ["React", "Javascript", "HTML/CSS"]
+          list: ["React (Hooks, Redux)",  "Javascript  ES6",
+            "Typescript",  "HTML/SCSS",  "Styled Component", "Material UI",
+            "Jest", "Cypress", "Material Design", "microfrontends"]
         },
         {
           groupName: "Performance",
@@ -83,7 +85,7 @@ export const ROLES_FR = {
           ]
         },
         {
-          groupName: "Code quality",
+          groupName: "Qualité du code",
           list: [
             "unitary and int tests",
             "Cucumber",
@@ -93,21 +95,21 @@ export const ROLES_FR = {
           ]
         },
         {
-          groupName: "Other",
+          groupName: "Autre",
           list: ["Scrum team"]
         }
       ],
-      training: ["AWS Certified Developer Associate (training - nov 2020)"]
+      training: ["AWS Certified Developer Associate (formation - nov 2020)"]
     },
     {
-      position: "Fullstack Angular/Java developer",
+      position: "Fullstack Angular/Java développeur",
       company: {
-        name: "French department of Interior",
+        name: "Ministère de l'Intérieur",
         website: "https://www.linkedin.com/company/ministere-de-l-interieur/",
-        sector: "Government - administration"
+        sector: "Gouvernement - administration"
       },
       contract: {
-        type: "Permanent",
+        type: "CDI",
         startDate: "2017-01-01",
         endDate: "2018-09-30"
       },
@@ -117,11 +119,11 @@ export const ROLES_FR = {
       },
       jobDescription:
         "<p>" +
-        "License driver project (Java 8, Angular JS) – microservices " +
-        "architecture (REST&SOAP)<br/>" +
-        "Maintain and developing new evolutions, testing<br/>" +
-        "Conception and qualification<br/>" +
-        "Python scripting to automate processes" +
+        "Projet permis de conduire (Java 8, Angular JS) - architecture " +
+        "microservices (REST & SOAP) <br/>" +
+        "Maintenir et développer de nouvelles fonctionalités, tester<br/>" +
+        "Conception et qualification <br/>" +
+        "Scripting Python pour automatiser les processus" +
         "</p>",
       technicalStack: [
         {
@@ -158,14 +160,14 @@ export const ROLES_FR = {
       ]
     },
     {
-      position: "System and virtualization engineer/DevOps",
+      position: "Ingénieur Systeme et virtualisation/DevOps",
       company: {
         name: "Orange Business Services",
         website: "https://www.linkedin.com/company/orange-business-services/",
         sector: "Telecom"
       },
       contract: {
-        type: "Permanent",
+        type: "CDI",
         startDate: "2013-01-01",
         endDate: "2016-12-31"
       },
@@ -175,13 +177,13 @@ export const ROLES_FR = {
       },
       jobDescription:
         "<p>" +
-        "<b>Tool team (DevOps)</b><br/>" +
-        "Powershell scripts, Python application (monitoring servers)<br/>" +
-        "PHP web site (inventory of internals applications)<br/><br/>" +
-        "<b>Infrastructure team (system/virtualization)</b><br/>" +
-        "Main project : migrate 70 servers from Windows server 2003 to 2008<br/>" +
-        "System and virtualization support level 3, Windows and Linux servers " +
-        "troubleshooting and administration" +
+        "<b>Tool team (DevOps)</b> <br/>" +
+        "Scripting Powershell, application Python (serveurs de surveillance) <br/>" +
+        "Site web PHP (inventaire des applications internes) <br/> <br/>" +
+        "<b>Équipe infrastructure (système / virtualisation) </b> <br/>" +
+        "Projet principal: migrer 70 serveurs du serveur Windows 2003 vers 2008 <br/>" +
+        "Support système et virtualisation niveau 3, serveurs Windows et Linux" +
+        "dépannage et administration" +
         "</p>",
       technicalStack: [
         {
@@ -211,14 +213,14 @@ export const ROLES_FR = {
   ],
   student: [
     {
-      position: "Project manager - IT Security",
+      position: "Chef de projet - IT Security",
       company: {
         name: "SFR",
         website: "https://www.linkedin.com/company/sfr/",
         sector: "Telecom"
       },
       contract: {
-        type: "Apprentice",
+        type: "Apprenti",
         startDate: "2010-09-01",
         endDate: "2012-09-30"
       },
@@ -236,14 +238,14 @@ export const ROLES_FR = {
         "</p>"
     },
     {
-      position: "Network technician - Radar engineering team",
+      position: "Technicien réseaux - Radar engineering team",
       company: {
         name: "Thales",
         website: "https://www.linkedin.com/company/thales/",
-        sector: "Defence"
+        sector: "Défence"
       },
       contract: {
-        type: "Trainee",
+        type: "Stage",
         startDate: "2010-03-01",
         endDate: "2010-08-30"
       },
@@ -265,7 +267,7 @@ export const ROLES_FR = {
         sector: "Website development & SEO"
       },
       contract: {
-        type: "Trainee",
+        type: "Stage",
         startDate: "2008-06-01",
         endDate: "2008-09-30"
       },
