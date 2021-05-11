@@ -36,12 +36,26 @@
       color: $secondary-color;
     }
   }
+
+  .svg-icon {
+    fill: $fourth-color;
+    width: 45px;
+    margin-right: 1rem;
+
+    &:hover {
+      fill: $secondary-color;
+    }
+  }
 }
 
 @media screen and (max-height: 600px), screen and (max-width: 600px) {
   .header-container {
     h2, h3, .header-icons {
       font-size: xx-large;
+    }
+
+    .svg-icon {
+      width: 30px;
     }
 
     h1 {
@@ -54,6 +68,10 @@
   .header-container {
     h2, h3, .header-icons {
       font-size: x-large;
+    }
+
+    .svg-icon {
+      width: 25px;
     }
 
     h1 {

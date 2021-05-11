@@ -103,11 +103,11 @@ export const OTHER_FR = {
       type: PetProjectType.SIMPLE_LINK
     },
     {
-      id: PetProjectName.NPM,
-      name: "npm",
-      description: "Mes packages npm (front)",
-      url: "https://www.npmjs.com/~davlac",
-      link: "www.npmjs.com/~davlac",
+      id: PetProjectName.BIT,
+      name: "Bit",
+      description: "Mes packages Bit (front)",
+      url: "https://bit.dev/davlac",
+      link: "bit.dev/davlac",
       type: PetProjectType.SIMPLE_LINK
     }
   ],

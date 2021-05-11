@@ -1,13 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDocker, faGithub, faNpm } from "@fortawesome/free-brands-svg-icons";
+import { faDocker, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Paper } from "@material-ui/core";
 import { ModalInfo } from "../../../element/modal/ModalInfo";
 import { PetProjectType } from "./PetProjectType";
 import { PetProjectName } from "./PetProjectName";
 import { faQuestionCircle } from "@fortawesome/free-regular-svg-icons";
+import { ReactComponent as BitLogo } from "../../../header/img/bit-icon.svg";
 
 const getIconByType = (type: PetProjectName) => {
   switch (type) {
@@ -17,8 +18,8 @@ const getIconByType = (type: PetProjectName) => {
       return <FontAwesomeIcon icon={faGithub} />;
     case PetProjectName.DOCKER:
       return <FontAwesomeIcon icon={faDocker} />;
-    case PetProjectName.NPM:
-      return <FontAwesomeIcon icon={faNpm} />;
+    case PetProjectName.BIT:
+      return <BitLogo style={{width: '40px'}} />;
     default:
       return <FontAwesomeIcon icon={faQuestionCircle} />;
   }

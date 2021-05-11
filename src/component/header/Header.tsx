@@ -5,11 +5,12 @@ import { Container } from "@material-ui/core";
 import { SelectLanguage } from "./language/SelectLanguage";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDocker, faLinkedin, faNpm } from "@fortawesome/free-brands-svg-icons";
+import { faDocker, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import BackgroundImgSmall from "./img/boreal-aurora-640x426.jpg";
 import BackgroundImgMedium from "./img/boreal-aurora-1920x1279.jpg";
 import BackgroundImgLarge from "./img/boreal-aurora-2400x1599.jpg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { ReactComponent as BitLogo } from "./img/bit-icon.svg";
 
 const getBackgroundImgByMediaQueries = () => {
   const checkWidthSmall = isMediaQueryMatch("max-width:640px");
@@ -61,8 +62,8 @@ export const Header = () => {
           <a href={"https://hub.docker.com/u/davlac"}>
             <FontAwesomeIcon icon={faDocker} className={"header-icons"} />
           </a>
-          <a href={"https://www.npmjs.com/~davlac"}>
-            <FontAwesomeIcon icon={faNpm} className={"header-icons"} />
+          <a href={"https://bit.dev/davlac"} >
+            <BitLogo className={"svg-icon"}/>
           </a>
           <a href={"https://www.linkedin.com/in/david-lacoste-6a643b4b"}>
             <FontAwesomeIcon icon={faLinkedin} className={"header-icons"} />
