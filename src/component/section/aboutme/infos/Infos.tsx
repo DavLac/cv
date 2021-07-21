@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import { Typography } from "@material-ui/core";
 import Avatar from "avataaars";
 
-const calculateAge = (birthday: string): number => {
-  const ageDiff = Date.now() - new Date(birthday).getTime();
-  const ageDate = new Date(ageDiff);
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
-};
+// const calculateAge = (birthday: string): number => {
+//   const ageDiff = Date.now() - new Date(birthday).getTime();
+//   const ageDate = new Date(ageDiff);
+//   return Math.abs(ageDate.getUTCFullYear() - 1970);
+// };
 
 const displayInfos = (infoFields: any) => {
   const elementsJsx: any[] = [];
@@ -55,10 +55,10 @@ export const Infos = () => {
       field: t("common:fieldNationality"),
       value: profileData.nationality
     },
-    {
-      field: t("common:fieldAge"),
-      value: calculateAge(profileData.birthdayDate)
-    },
+    // {
+    //  field: t("common:fieldAge"),
+    //  value: calculateAge(profileData.birthdayDate)
+    // },
     {
       field: t("common:fieldStatus"),
       value: profileData.status
